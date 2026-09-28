@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=none">
+  <title>VISITJEJU</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./header.css">
+  <link rel="stylesheet" href="./footer.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+  <script src="./index.js"></script>
+</head>
+<div class="body">
+
+  <body>
+    <div class="header_outer" id="btn_top">
+      <input type="checkbox" id="gnb02">
+      <input type="checkbox" id="gnb03">
+      <input type="checkbox" id="gnb04">
+      <input type="checkbox" id="gnb05">
+      <input type="checkbox" id="lang">
+      <header class="header">
+        <div class="logo">
+          <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+        </div><!--logo-->
+        <button type="button" class="weather_box">
+          <div class="weather_img">
+            <img src="./img/weather_img01.png" alt="weather">
+          </div>
+          <div class="temp">
+            <p>27º</p>
+          </div>
+        </button><!--weather_box-->
+
+        <div class="mypage_box">
+          <a href="#!">
+            <i class="fa-solid fa-user"></i>
+          </a>
+        </div><!--mypage_box-->
+
+        <button type="button" class="lang_type_box">
+          <i class="fa-solid fa-globe"></i>
+        </button><!--lang_type-->
+
+        <button type="button" class="lang_size_btn">
+          <span>가</span>
+        </button><!--lang_size_btn-->
+
+        <button type="button" class="search_btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button><!--search_btn-->
+
+        <button type="button" class="gnb_btn">
+          <i class="fa-solid fa-bars"></i>
+        </button><!--gnb_btn-->
+
+      </header><!--header-->
+      <div class="weather_box_down">
+        <div class="weather_top">
+          <div class="top_top">
+            <button type="button" class="weather_close">
+              <i class="fa-solid fa-xmark"></i>
+            </button><!--weather_close-->
+            <div>
+              <img src="./img/weather_img01.png" alt="weather">
+            </div>
+            <p>29º</p>
+            <p>흐림</p>
+          </div><!--top_top-->
+          <div class="top_bot">
+            <p>
+              <i class="fa-solid fa-caret-up"></i>32º
+            </p>
+            <p>
+              <i class="fa-solid fa-caret-down"></i>25º
+            </p>
+            <p>
+              <i class="fa-solid fa-circle"></i>미세먼지 좋음
+            </p>
+          </div><!--top_bot-->
+        </div><!--weather_top-->
+        <div class="weather_bot">
+          <div class="bot_top">
+            <a href="https://www.kma.go.kr/jeju/html/main/index.jsp">
+              <p>기상청 보러가기</p>
+            </a>
+          </div><!--bot_top-->
+          <div class="bot_mid">
+            <div class="weather">
+              <div class="weather_right">
+                <p>내일</p>
+                <p>07/02</p>
+              </div>
+              <div class="weather_mid">
+                <div>
+                  <img src="./img/weather_img01.png" alt="weather">
+                </div>
+                <p>소나기</p>
+              </div>
+              <div class="weather_right">
+                <p>31º</p>
+                <p>23º</p>
+              </div>
+            </div><!--weather-->
+            <div class="weather">
+              <div class="weather_right">
+                <p>모레</p>
+                <p>07/03</p>
+              </div>
+              <div class="weather_mid">
+                <div>
+                  <img src="./img/weather_img01.png" alt="weather">
+                </div>
+                <p>소나기</p>
+              </div>
+              <div class="weather_right">
+                <p>31º</p>
+                <p>23º</p>
+              </div>
+            </div><!--weather-->
+            <div class="weather">
+              <div class="weather_right">
+                <p>토</p>
+                <p>07/04</p>
+              </div>
+              <div class="weather_mid">
+                <div>
+                  <img src="./img/weather_img01.png" alt="weather">
+                </div>
+                <p>소나기</p>
+              </div>
+              <div class="weather_right">
+                <p>31º</p>
+                <p>23º</p>
+              </div>
+            </div><!--weather-->
+          </div><!--bot_mid-->
+          <div class="bot_bot">
+            <div class="bot_title">
+              <p>해양지수</p>
+            </div>
+            <div class="oceason">
+              <div class="sea_box">
+                <div class="sea">
+                  <div>
+                    <img src="./img/weather_sea_img01.jpg" alt="">
+                  </div>
+                  <p>제주시</p>
+                </div><!--sea-->
+                <div class="sea_num_box">
+                  <div class="sea_num">
+                    <p>파고</p>
+                    <p>0m</p>
+                  </div>
+                  <div class="sea_num01">
+                    <p>수온</p>
+                    <p>0.0s</p>
+                  </div>
+                </div><!--sea_num_box-->
+              </div><!--sea_box-->
+              <div class="sea_box">
+                <div class="sea">
+                  <div>
+                    <img src="./img/weather_sea_img02.jpg" alt="">
+                  </div>
+                  <p>서귀포시</p>
+                </div><!--sea-->
+                <div class="sea_num_box">
+                  <div class="sea_num">
+                    <p>파고</p>
+                    <p>0m</p>
+                  </div>
+                  <div class="sea_num01">
+                    <p>수온</p>
+                    <p>0.0s</p>
+                  </div>
+                </div><!--sea_num_box-->
+              </div><!--sea_box-->
+              <div class="sea_box">
+                <div class="sea">
+                  <div>
+                    <img src="./img/weather_sea_img03.jpg" alt="">
+                  </div>
+                  <p>애월</p>
+                </div><!--sea-->
+                <div class="sea_num_box">
+                  <div class="sea_num">
+                    <p>파고</p>
+                    <p>0m</p>
+                  </div>
+                  <div class="sea_num01">
+                    <p>수온</p>
+                    <p>0.0s</p>
+                  </div>
+                </div><!--sea_num_box-->
+              </div><!--sea_box-->
+              <div class="sea_box">
+                <div class="sea">
+                  <div>
+                    <img src="./img/weather_sea_img04.jpg " alt="">
+                  </div>
+                  <p>성산</p>
+                </div><!--sea-->
+                <div class="sea_num_box">
+                  <div class="sea_num">
+                    <p>파고</p>
+                    <p>0m</p>
+                  </div>
+                  <div class="sea_num01">
+                    <p>수온</p>
+                    <p>0.0s</p>
+                  </div>
+                </div><!--sea_num_box-->
+              </div><!--sea_box-->
+            </div><!--oceason-->
+          </div>
+        </div>
+      </div><!--weather_box_down-->
+      <div class="lang_type">
+        <a href="#!">
+          <p>KOR</p>
+        </a>
+        <a href="#!">
+          <p>Eng</p>
+        </a>
+        <a href="#!">
+          <p>CHA</p>
+        </a>
+      </div><!--lang_type-->
+      <div class="lang_size_down">
+        <div class="lang_box">
+          <span>+</span>
+          <span>초기화</span>
+          <span>-</span>
+        </div>
+      </div><!--lang_size_down-->
+      <div class="search_sheet">
+        <div class="search_box">
+          <div class="search">
+            <input type="search" placeholder="검색어를 입력하세요"><i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="search_bot">
+            <div class="search_title">
+              <p>인기 검색어</p>
+            </div>
+            <div class="search_tag">
+              <span><a href="#">#유네스코</a></span>
+              <span><a href="#">#액티비티</a></span>
+              <span><a href="#">#반려동물</a></span>
+              <span><a href="#">#비오는 날</a></span>
+            </div>
+          </div>
+        </div>
+      </div><!--search_sheet-->
+      <nav class="gnb_outer">
+        <div class="gnb_menu">
+          <div class="gnb_menu_top">
+            <span><a href="#">로그인</a></span>
+            <span><a href="#">마이페이지</a></span>
+            <select name="lang_side" id="lang_side" class="lang_side">
+              <option value="lang_side"><a href="#">KOR</a></option>
+              <option value="lang_side"><a href="#">ENG</a></option>
+              <option value="lang_side"><a href="#">CHA</a></option>
+            </select>
+          </div><!--gnb_menu_top-->
+          <div class="gnb_box">
+            <label for="gnb01" class="gnb01">
+              제주 놀멍<i class="fa-solid fa-angle-down"></i>
+            </label>
+            <ul class="lnb01">
+              <li><a href="./sub.html">지금 제주는</a></li>
+              <li><a href="#">제주 관광지</a></li>
+              <li><a href="#">음식</a></li>
+              <li><a href="#">숙박</a></li>
+              <li><a href="#">쇼핑</a></li>
+            </ul>
+            <label for="gnb02" class="gnb02">
+              <a href="#">AI 추천</a><i class="fa-solid fa-angle-down"></i>
+            </label>
+            <ul class="lnb02">
+              <li><a href="#">추천 여행지</a></li>
+              <li><a href="#">추천 코스</a></li>
+            </ul>
+            <label for="gnb03" class="gnb03">
+              <a href="#">K-pick</a><i class="fa-solid fa-angle-down"></i>
+            </label>
+            <ul class="lnb03">
+              <li><a href="#">Artist-pick</a></li>
+              <li><a href="#">드라마 촬영지</a></li>
+            </ul>
+            <label for="gnb04" class="gnb04">
+              <a href="#">오름길</a><i class="fa-solid fa-angle-down"></i>
+            </label>
+            <ul class="lnb04">
+              <li><a href="#">오름길 소개</a></li>
+              <li><a href="#">코스 안내</a></li>
+            </ul>
+            <label for="gnb05" class="gnb05">
+              <a href="#">제주 소식통</a><i class="fa-solid fa-angle-down"></i>
+            </label>
+            <ul class="lnb05">
+              <li><a href="#">여행 소식</a></li>
+              <li><a href="#">공지</a></li>
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">관광 안내소</a></li>
+              <li><a href="#">교통 정보</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav><!--gnb_outer-->
+      <div class="gnb_wrap">
+        <div class="gnb_out_box">
+          <div class="gnb_out01">
+            <p><a href="#!">제주 놀멍</a></p>
+          </div>
+          <div class="gnb_out02">
+            <p><a href="#!">AI추천</a></p>
+          </div>
+          <div class="gnb_out03">
+            <p><a href="#!">K-pick</a></p>
+          </div>
+          <div class="gnb_out04">
+            <p><a href="#!">오름길</a></p>
+          </div>
+          <div class="gnb_out05">
+            <p><a href="#!">제주 소식통</a></p>
+          </div>
+          <div class="gnb_full_down">
+            <div class="gnb_down">
+              <div class="gnb_down01">
+                <p><a href="./sub.html">지금 제주는</a></p>
+                <p><a href="#!">제주 관광지</a></p>
+                <p><a href="#!">음식</a></p>
+                <p><a href="#!">숙박</a></p>
+                <p><a href="#!">쇼핑</a></p>
+              </div>
+              <div class="gnb_down02">
+                <p><a href="#!">추천 여행지</a></p>
+                <p><a href="#!">추천 코스</a></p>
+              </div>
+              <div class="gnb_down03">
+                <p><a href="#!">Artist-pick</a></p>
+                <p><a href="#!">드라마 촬영지</a></p>
+              </div>
+              <div class="gnb_down04">
+                <p><a href="#!">오름길 소개</a></p>
+                <p><a href="#!">코스 안내</a></p>
+              </div>
+              <div class="gnb_down05">
+                <p><a href="#!">여행소식</a></p>
+                <p><a href="#!">공지</a></p>
+                <p><a href="#!">이벤트</a></p>
+                <p><a href="#!">관광 안내소</a></p>
+                <p><a href="#!">교통 정보</a></p>
+              </div>
+            </div>
+          </div><!--gnb_full_down-->
+        </div><!--gnb_out_box-->
+      </div>
+    </div><!--header_outer-->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/main_banner00.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/main_banner01.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/main_banner002.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/main_banner003.jpg" alt="">
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="wrap">
+      <div class="metapo_box">
+        <div class="metapoA">
+          <div class="metapo">
+            <div>
+              <a href="#!"><img src="./img/metapo_01.jpg" alt=""></a>
+            </div>
+            <p>AI 추천</p>
+          </div><!--metapo-->
+          <div class="metapo">
+            <div>
+              <a href="#!"><img src="./img/metapo_03.jpg" alt=""></a>
+            </div>
+            <p>K-Pick</p>
+          </div><!--metapo-->
+          <div class="metapo">
+            <div>
+              <a href="./sub.html"><img src="./img/metapo_02.jpg" alt=""></a>
+            </div>
+            <p>축제·행사</p>
+          </div><!--metapo-->
+          <div class="metapo">
+            <div>
+              <a href="#!"><img src="./img/metapo_04.jpg" alt=""></a>
+            </div>
+            <p>오름길</p>
+          </div><!--metapo-->
+        </div>
+        <div class="metapoB">
+          <div class="metapo">
+            <div>
+              <a href="#!"><img src="./img/metapo_05.jpg" alt=""></a>
+            </div>
+            <p>명소</p>
+          </div><!--metapo-->
+          <div class="metapo">
+            <div>
+              <a href="#!"><img src="./img/metapo_06.jpg" alt=""></a>
+            </div>
+            <p>맛집</p>
+          </div><!--metapo-->
+          <div class="metapo">
+            <div>
+              <a href="#!"><img src="./img/metapo_07.jpg" alt=""></a>
+            </div>
+            <p>교통</p>
+          </div><!--metapo-->
+          <div class="metapo">
+            <div>
+              <a href="#!"><img src="./img/metapo_08.jpg" alt=""></a>
+            </div>
+            <p>소식통</p>
+          </div><!--metapo-->
+        </div>
+      </div><!--metapo_box-->
+      <section class="content01">
+        <div class="content01_title">
+          <a href="#!">
+            <p>AI 추천</p>
+            <p>제주 여행 코스</p>
+          </a>
+        </div>
+        <ul class="content01_tab">
+          <li class="on_tab">#유네스코</li>
+          <li>#액티비티</li>
+          <li>#반려동물</li>
+          <li>#비오는 날 </li>
+        </ul>
+        <div class="content01_sheet">
+          <div class="on_sheet">
+            <div class="content01_scroll">
+              <div class="sheet01_img">
+                <img src="./img/mobile/img05_ai.jpg" alt="">
+                <div class="img_overlay">
+                  <div class="overlay_top">
+                    <p>섭지코지</p>
+                    <button type="button" class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="overlay_bot">
+                    <p>제주도 동쪽 바닷가에 볼록 튀어나온 섭지 코지는 해안의 풍경이 멋지게...</p>
+                  </div>
+                </div>
+              </div><!--sheet01_img-->
+              <div class="sheet01_img">
+                <img src="./img/mobile/img04_ai.jpg" alt="">
+                <div class="img_overlay">
+                  <div class="overlay_top">
+                    <p>아쿠아플라넷 제주</p>
+                    <button type="button" class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="overlay_bot">
+                    <p>아시아 최대 규모의 해양 테마파크로, 해양 문화의 가치와 생태계 보존을 대중에게...</p>
+                  </div>
+                </div>
+              </div><!--sheet01_img-->
+              <div class="sheet01_img">
+                <img src="./img/mobile/img07_ai.jpg" alt="">
+                <div class="img_overlay">
+                  <div class="overlay_top">
+                    <p>김녕해수욕장</p>
+                    <button type="button" class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="overlay_bot">
+                    <p>하늘에서 바라본 모습이 한문 평(平)자를 이룬 모양으로 하고 있어 '김녕'이라고...</p>
+                  </div>
+                </div>
+              </div><!--sheet01_img-->
+            </div>
+          </div><!--content01_sheet-->
+          <div>
+            <div class="content01_scroll">
+              <div class="sheet01_img">
+                <img src="./img/mobile/img08_ai.jpg" alt="">
+                <div class="img_overlay">
+                  <div class="overlay_top">
+                    <p>새별오름</p>
+                    <button type="button" class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="overlay_bot">
+                    <p>새별오름은 바리메오름·누운오름·당오름·금오름 등 많은 오름이 밀집해 있는 서부...</p>
+                  </div>
+                </div>
+              </div><!--sheet01_img-->
+              <div class="sheet01_img">
+                <img src="./img/mobile/img19_ai.jpg" alt="">
+                <div class="img_overlay">
+                  <div class="overlay_top">
+                    <p>수월봉</p>
+                    <button type="button" class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="overlay_bot">
+                    <p>수월봉은 해발 777m 높이의 제주 서부지역 조망봉으로, 정상에서 바라보는 풍광이 가...</p>
+                  </div>
+                </div>
+              </div><!--sheet01_img-->
+              <div class="sheet01_img">
+                <img src="./img/mobile/img10_ai.jpg" alt="">
+                <div class="img_overlay">
+                  <div class="overlay_top">
+                    <p>어리목계곡</p>
+                    <button type="button" class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="overlay_bot">
+                    <p>어리목계곡은 한라산 등산로 중 등산객이 가장 많이 이용하는 북서쪽 등산로에 위치...</p>
+                  </div>
+                </div>
+              </div><!--sheet01_img-->
+            </div>
+          </div><!--content02_sheet-->
+          <div>
+            <div class="content01_scroll">
+              <div class="sheet01_img">
+                <img src="./img/mobile/img11_ai.jpg" alt="">
+                <div class="img_overlay">
+                  <div class="overlay_top">
+                    <p>만장굴</p>
+                    <button type="button" class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="overlay_bot">
+                    <p>제주 말로 '아주깊다'는 의미에서 '만쟁이거머리굴'로 불려온 만장굴은 약 10만년전...</p>
+                  </div>
+                </div>
+              </div><!--sheet01_img-->
+              <div class="sheet01_img">
+                <img src="./img/mobile/img12_ai.jpg" alt="">
+                <div class="img_overlay">
+                  <div class="overlay_top">
+                    <p>물영아리</p>
+                    <button type="button" class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="overlay_bot">
+                    <p>영아리는 신령스런 산이라는 뜻이다. 앞에'물'이란 접두어가 붙은 것은 분화구...</p>
+                  </div>
+                </div>
+              </div><!--sheet01_img-->
+              <div class="sheet01_img">
+                <img src="./img/mobile/img20_ai.jpg" alt="">
+                <div class="img_overlay">
+                  <div class="overlay_top">
+                    <p>섭지코지</p>
+                    <button type="button" class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="overlay_bot">
+                    <p>제주도 동쪽 바닷가에 볼록 튀어나온 섭지 코지는 해안의 풍경이 멋지게...</p>
+                  </div>
+                </div>
+              </div><!--sheet01_img-->
+            </div>
+          </div><!--content03_sheet-->
+          <div>
+            <div class="content01_scroll">
+              <div class="sheet01_img">
+                <img src="./img/mobile/img14_ai.jpg" alt="">
+                <div class="img_overlay">
+                  <div class="overlay_top">
+                    <p>섭지코지</p>
+                    <button type="button" class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="overlay_bot">
+                    <p>제주도 동쪽 바닷가에 볼록 튀어나온 섭지 코지는 해안의 풍경이 멋지게...</p>
+                  </div>
+                </div>
+              </div><!--sheet01_img-->
+              <div class="sheet01_img">
+                <img src="./img/mobile/img15_ai.jpg" alt="">
+                <div class="img_overlay">
+                  <div class="overlay_top">
+                    <p>섭지코지</p>
+                    <button type="button" class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="overlay_bot">
+                    <p>제주도 동쪽 바닷가에 볼록 튀어나온 섭지 코지는 해안의 풍경이 멋지게...</p>
+                  </div>
+                </div>
+              </div><!--sheet01_img-->
+              <div class="sheet01_img">
+                <img src="./img/mobile/img16_ai.jpg" alt="">
+                <div class="img_overlay">
+                  <div class="overlay_top">
+                    <p>섭지코지</p>
+                    <button type="button" class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="overlay_bot">
+                    <p>제주도 동쪽 바닷가에 볼록 튀어나온 섭지 코지는 해안의 풍경이 멋지게...</p>
+                  </div>
+                </div>
+              </div><!--sheet01_img-->
+            </div>
+          </div><!--content04_sheet-->
+        </div>
+
+      </section><!--content01-->
+      <section class="content02">
+        <div class="content02_title">
+          <a href="#!">
+            <p>K-Artist Pick</p>
+          </a>
+        </div>
+        <ul class="artist_tab">
+          <li class="on_tab02">
+            <div>
+              <img src="./img/kartist03.jpeg" alt="">
+            </div>
+            <p>아이유Pick</p>
+          </li>
+          <li>
+            <div>
+              <img src="./img/kartist02.jpeg" alt="">
+            </div>
+            <p>소유Pick</p>
+          </li>
+          <li>
+            <div>
+              <img src="./img/kartist07.jpg" alt="">
+            </div>
+            <p>부승관Pick</p>
+          </li>
+          <li>
+            <div>
+              <img src="./img/kartist05.jpeg" alt="">
+            </div>
+            <p>이효리Pick</p>
+          </li>
+          <li>
+            <div>
+              <img src="./img/kartist08.jpg" alt="">
+            </div>
+            <p>다영Pick</p>
+          </li>
+        </ul>
+        <div class="content02_sheet">
+          <div class="artist_sheet01 on_sheet02">
+            <div class="pick">
+              <div class="pick01">
+                <div>
+                  <img src="./img/kpick34.jpg" alt="">
+                </div>
+                <div class="pick_overlay">
+                  <div class="pick_top">
+                    <p>오라동 메밀밭</p>
+                    <button type="button" class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="pick_bot">
+                    <p>오라동 동성마을 안에 조성된 오라동 메밀밭은 관음사에서 1100로로 이어지는 중산간 길목에 자리하고 있으며, ...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="pick02">
+                <div class="pick02_title">
+                  <p>'폭싹 속았수다' 촬영지</p>
+                </div>
+                <div class="pick_text">
+                  <div class="pick_txt01">
+                    <p>출연진</p>
+                    <p>아이유, 박보검 등</p>
+                  </div>
+                  <div class="pick_txt02">
+                    <p>위치</p>
+                    <p>제주 제주시 오라이동 산76(오라동 청보리 메밀꽃 밭)</p>
+                  </div>
+                  <div class="pick_txt03">
+                    <p>입장료</p>
+                    <p>성인(3,000원) / 아이(1,000원) / 제주도민(1,000원)</p>
+                  </div>
+                  <div class="pick_txt04">
+                    <p>운영시간</p>
+                    <p>매일 9:00~17:00(5~6월 일부 기간만 운영)</p>
+                  </div>
+                  <div class="pick_txt05">
+                    <p>주차</p>
+                    <p>메밀밭 입구</p>
+                  </div>
+                </div>
+              </div>
+            </div><!--pick-->
+          </div><!--sheet01-->
+          <div class="artist_sheet02">
+            <div class="pick">
+              <div class="pick01">
+                <div>
+                  <img src="./img/kpick33.jpg" alt="">
+                </div>
+                <div class="pick_overlay">
+                  <div class="pick_top">
+                    <p>성산일출봉</p>
+                    <button type="button" class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="pick_bot">
+                    <p>제주도의 다른 오름들과 달리 마그마가 물속에서 분출하면서 만들어진 수성 화산체다. 화산 활동 시 분출된 뜨거운 마그마 ...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="pick02">
+                <div class="pick02_title">
+                  <p>유네스코 세계자연유산</p>
+                </div>
+                <div class="pick_text">
+                  <div class="pick_txt01">
+                    <p>이용시간</p>
+                    <p>하절기(5~8월): 04:30~20:00, 춘추절기 : 05:00~19:00, 동절기(11~2월) : 06:00~18:00</p>
+                  </div>
+                  <div class="pick_txt02">
+                    <p>입장료(유료구간)</p>
+                    <p>성인 5,000원, 청소년 및 어린이 2,500원(정상 등반 코스)</p>
+                  </div>
+                  <div class="pick_txt03">
+                    <p>정상 등반 코스(유료)</p>
+                    <p>편도 약 20~25분 소요(왕복 약 50분),계단이 많아 경사가 다소 가쁩니다.</p>
+                  </div>
+                  <div class="pick_txt04">
+                    <p>해안 산책로(무료)</p>
+                    <p>매표소 갈림길에서 왼쪽 길로 빠져 가볍게 바다와 측면을 둘러보는 코스입니다</p>
+                  </div>
+                </div>
+              </div>
+            </div><!--pick-->
+          </div><!--sheet02-->
+          <div class="artist_sheet03">
+            <div class="pick">
+              <div class="pick01">
+                <div>
+                  <img src="./img/kpick35.jpg" alt="">
+                </div>
+                <div class="pick_overlay">
+                  <div class="pick_top">
+                    <p>별방진</p>
+                    <button type="button" class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="pick_bot">
+                    <p>1974년 4월13일에 제주도 기념물 제24호로 지정되었다. 현재 성의 둘레는 950m이며 남쪽이 높고 북쪽이 낮은 ...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="pick02">
+                <div class="pick02_title">
+                  <p>'아이스크림 광고' 촬영지</p>
+                </div>
+                <div class="pick_text">
+                  <div class="pick_txt01">
+                    <p>세븐틴 부승관</p>
+                    <p>부라보콘 CF 촬영지</p>
+                  </div>
+                  <div class="pick_txt02">
+                    <p>이용시간</p>
+                    <p>상시 개방</p>
+                  </div>
+                  <div class="pick_txt03">
+                    <p>여행명소</p>
+                    <p>봄에는 성곽 주변으로 노란 유채꽃이 피어 아름다운 풍경을 선사</p>
+                  </div>
+                  <div class="pick_txt04">
+                    <p>유명한 카페 '하도1940'</p>
+                    <p>제주특별자치도 제주시 구좌읍 해맞이해안로 1681-3</p>
+                  </div>
+                  <div class="pick_txt05">
+                    <p>주차</p>
+                    <p>가능(무료)</p>
+                  </div>
+                </div>
+              </div>
+            </div><!--pick-->
+          </div><!--sheet03-->
+          <div class="artist_sheet04">
+            <div class="pick">
+              <div class="pick01">
+                <div>
+                  <img src="./img/kpick31.jpg" alt="">
+                </div>
+                <div class="pick_overlay">
+                  <div class="pick_top">
+                    <p>천왕사</p>
+                    <button type="button" class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="pick_bot">
+                    <p>한라산 어승생 동쪽에 있는 수많은 봉우리와 골짜기로 이루어진 아흔아흡골 중 하나인 금봉곡 아래 위한 사찰이다. 1955년 ...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="pick02">
+                <div class="pick02_title">
+                  <p>'효리네 민박집' 촬영지</p>
+                </div>
+                <div class="pick_text">
+                  <div class="pick_txt01">
+                    <p>방송출연</p>
+                    <p>효리네 민박 방송이후 이효리가 마음의 평화를 찾기위해 자주 찾던 산책 명소로 대중에게 알려졌습니다</p>
+                  </div>
+                  <div class="pick_txt02">
+                    <p>위치</p>
+                    <p>제주특별자치도 제주시 아봉로(한라산 동쪽 아래, 아흔아흡골 금봉골)</p>
+                  </div>
+                  <div class="pick_txt03">
+                    <p>특징</p>
+                    <p>울창한 숲과 기암괴석이 어울려져 경치가 아름다우며, 제주 공항에서 차로 약14Km 거리에 위치해있습니다.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!--pick-->
+          </div><!--sheet04-->
+          <div class="artist_sheet05">
+            <div class="pick">
+              <div class="pick01">
+                <div>
+                  <img src="./img/kpick30.jpg" alt="">
+                </div>
+                <div class="pick_overlay">
+                  <div class="pick_top">
+                    <p>원앤온리</p>
+                    <button type="button" class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </button>
+                  </div>
+                  <div class="pick_bot">
+                    <p>황우치 해변 바로 앞의 대표적인 대형 카페이자 브런치와 베이커리를 즐길 수 있는곳으로, 산방산과 바다가 맞닿은 환...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="pick02">
+                <div class="pick02_title">
+                  <p>'배틀트립' 다영 추천</p>
+                </div>
+                <div class="pick_text">
+                  <div class="pick_txt01">
+                    <p>뷰 맛집!</p>
+                    <p>산빙산과 바다를 동시에 볼 수 있는 카페</p>
+                  </div>
+                  <div class="pick_txt02">
+                    <p>위치</p>
+                    <p>제주특별자치도 서귀포시 안덕면 산방로 141(사계리86)</p>
+                  </div>
+                  <div class="pick_txt03">
+                    <p>특징</p>
+                    <p>카페 마당과 황우치 해변이 바로 이어져 산책하기 좋고, 웅장한 산방산 뷰를 조망할 수 있습니다.</p>
+                  </div>
+                  <div class="pick_txt04">
+                    <p>영업시간</p>
+                    <p>매일 9:00~19:00(라스트오더 18:30)</p>
+                  </div>
+                </div>
+              </div>
+            </div><!--pick-->
+          </div><!--sheet05-->
+        </div>
+      </section><!--content02-->
+      <section class="content03">
+        <div class="content03_title">
+          <a href="./sub.html">
+            <p>지금 우리 제주는</p>
+          </a>
+        </div>
+        <div class="content03_box">
+          <div class="festival_box">
+            <div id="accordion" class="accordion">
+              <div class="festival active">
+                <div class="name name01">
+                  <p>그래비티퀘스트</p>
+                </div>
+                <div class="content">
+                  <img src="./img/mobile/festivities_img02_mobile.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="festival">
+                <div class="name name02">
+                  <p>사라봉 굿나잇</p>
+                </div>
+                <div class="content">
+                  <img src="./img/mobile/festivities_img05_mobile.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="festival">
+                <div class="name name03">
+                  <p>화산암반수원정대</p>
+                </div>
+                <div class="content">
+                  <img src="./img/mobile/festivities_img07_mobile.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="festival">
+                <div class="name name04">
+                  <p>남국재견</p>
+                </div>
+                <div class="content">
+                  <img src="./img/mobile/festivities_img09_mobile.jpg" alt="">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section><!--content03-->
+      <div class="gap_line">
+        <p>✦ENJOY JEJU ✦ JEJU ISLAND ✦</p>
+      </div>
+      <section class="active_box">
+        <div class="active_title">
+          <a href="#!">
+            <p>제주를 즐기다</p>
+          </a>
+        </div>
+        <div class="activeA">
+          <div class="active01">
+            <div class="active">
+              <div class="active_img">
+                <img src="./img/active01.jpg" alt="">
+              </div>
+              <div class="active_text">
+                <div class="active_top">
+                  <p>제주 송당 승마장</p>
+                </div>
+                <div class="active_mid">
+                  <span>#오프로드</span>
+                  <span>#탐험</span>
+                  <span>#체험</span>
+                </div>
+                <div class="active_mid01">
+                  <p>
+                    <i class="fa-solid fa-location-dot"></i>위치
+                  </p>
+                  <p>제주시 구좌읍 번영로 2015번지 송당승마장</p>
+                </div>
+                <div class="active_mid02">
+                  <p>별점 3.4</p>
+                  <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </p>
+                </div>
+                <div class="active_bot">
+                  <p><a href="https://smartstore.naver.com/sd1199">자세히 보기→</a></p>
+                </div>
+              </div>
+            </div><!--active-->
+            <div class="active">
+              <div class="active_img">
+                <img src="./img/active02.jpg" alt="">
+              </div>
+              <div class="active_text">
+                <div class="active_top">
+                  <p>제주 ATV 사륜 오토바이 체험</p>
+                </div>
+                <div class="active_mid">
+                  <span>#승마</span>
+                  <span>#초원</span>
+                  <span>#힐링</span>
+                </div>
+                <div class="active_mid01">
+                  <p>
+                    <i class="fa-solid fa-location-dot"></i>위치
+                  </p>
+                  <p>제주 서귀포 남원읍 서성로 955-117 1동</p>
+                </div>
+                <div class="active_mid02">
+                  <p>별점 4.8</p>
+                  <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </p>
+                </div>
+                <div class="active_bot">
+                  <p><a href="http://buckycar.kr/">자세히 보기→</a></p>
+                </div>
+              </div>
+            </div><!--active-->
+          </div>
+          <div class="active02">
+            <div class="active">
+              <div class="active_img">
+                <img src="./img/active03.jpg" alt="">
+              </div>
+              <div class="active_text">
+                <div class="active_top">
+                  <p>제주 9.18 파크</p>
+                </div>
+                <div class="active_mid">
+                  <span>#스피드</span>
+                  <span>#레이싱</span>
+                  <span>#도전</span>
+                </div>
+                <div class="active_mid01">
+                  <p>
+                    <i class="fa-solid fa-location-dot"></i>위치
+                  </p>
+                  <p>제주특별자치도 제주시 애월읍 천덕로 880-24</p>
+                </div>
+                <div class="active_mid02">
+                  <p>별점 4.4</p>
+                  <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </p>
+                </div>
+                <div class="active_bot">
+                  <p><a href="https://www.981park.com/">자세히 보기→</a></p>
+                </div>
+              </div>
+            </div><!--active-->
+            <div class="active">
+              <div class="active_img">
+                <img src="./img/active04.jpg" alt="">
+              </div>
+              <div class="active_text">
+                <div class="active_top">
+                  <p>김녕 요트 투어</p>
+                </div>
+                <div class="active_mid">
+                  <span>#돌고래</span>
+                  <span>#요트</span>
+                  <span>#낭만</span>
+                </div>
+                <div class="active_mid01">
+                  <p>
+                    <i class="fa-solid fa-location-dot"></i>위치
+                  </p>
+                  <p>제주특별자치도 제주시 구좌읍 구좌해안로 229-16</p>
+                </div>
+                <div class="active_mid02">
+                  <p>별점 4.5</p>
+                  <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </p>
+                </div>
+                <div class="active_bot">
+                  <p><a href="https://gnytour.com/">자세히 보기→</a></p>
+                </div>
+              </div>
+            </div><!--active-->
+          </div>
+        </div>
+      </section>
+      <section class="content04">
+        <div class="content04_title">
+          <a href="#!">
+            <p>오름길</p>
+          </a>
+        </div>
+        <ul class="way_tab">
+          <li class="on_tab04">1코스</li>
+          <li>2코스</li>
+          <li>3코스</li>
+          <li>4코스</li>
+        </ul>
+        <div class="way_sheet">
+          <div class="way_sheet01 on_sheet04">
+            <div class="way_box">
+              <input type="radio" name="info1" id="infor01">
+              <input type="radio" name="info1" id="infor01_1">
+              <input type="radio" name="info1" id="infor01_close">
+              <input type="radio" name="info1" id="infor01_1_close">
+              <div class="map">
+                <img src="./img/map01_pc.jpg" alt="">
+              </div>
+              <div class="infor_detail01">
+                <label for="infor01_close" class="infor01_close">
+                  <i class="fa-solid fa-xmark"></i>
+                </label>
+                <div class="infor_img">
+                  <img src="./img/way_infor_img.jpg" alt="">
+                </div>
+                <div class="infor_text">
+                  <div class="infor_top">
+                    <p>공중화장실</p>
+                  </div>
+                  <div class="infor_bot">
+                    <div class="infor_left">
+                      <p>거리(내 위치 기준)</p>
+                      <p>시설정보</p>
+                      <p>전화번호</p>
+                    </div>
+                    <div class="infor_right">
+                      <p>540M</p>
+                      <p>여자 3칸, 남자 3칸</p>
+                      <p>010-0000-0000</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!--infor_detail-->
+              <div class="info01">
+                <label for="infor01">
+                  <i class="fa-solid fa-restroom"></i>
+                </label>
+              </div>
+              <div class="infor_detail01_1">
+                <label for="infor01_1_close" class="infor01_1_close">
+                  <i class="fa-solid fa-xmark"></i>
+                </label>
+                <div class="infor_img">
+                  <img src="./img/way_infor_img02.jpg" alt="">
+                </div>
+                <div class="infor_text">
+                  <div class="infor_top">
+                    <p>공영주차장</p>
+                  </div>
+                  <div class="infor_bot">
+                    <div class="infor_left">
+                      <p>거리(내 위치 기준)</p>
+                      <p>시설정보</p>
+                      <p>전화번호</p>
+                    </div>
+                    <div class="infor_right">
+                      <p>540M</p>
+                      <p>1,000대</p>
+                      <p>010-0000-0000</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!--infor_detail-->
+              <div class="info01_1">
+                <label for="infor01_1">
+                  <i class="fa-solid fa-square-parking"></i>
+                </label>
+              </div>
+            </div>
+          </div><!--way_sheet01-->
+          <div class="way_sheet01">
+            <div class="way_box">
+              <input type="radio" name="infor2" id="infor02">
+              <input type="radio" name="infor2" id="infor02_1">
+              <input type="radio" name="infor2" id="infor02_close">
+              <input type="radio" name="infor2" id="infor02_1_close">
+              <div class="map">
+                <img src="./img/map02_pc.jpg" alt="">
+              </div>
+              <div class="infor_detail02">
+                <label for="infor02_close" class="infor02_close">
+                  <i class="fa-solid fa-xmark"></i>
+                </label>
+                <div class="infor_img">
+                  <img src="./img/way_infor_img01.jpg" alt="">
+                </div>
+                <div class="infor_text">
+                  <div class="infor_top">
+                    <p>공중화장실</p>
+                  </div>
+                  <div class="infor_bot">
+                    <div class="infor_left">
+                      <p>거리(내 위치 기준)</p>
+                      <p>시설정보</p>
+                      <p>전화번호</p>
+                    </div>
+                    <div class="infor_right">
+                      <p>540M</p>
+                      <p>여자 3칸, 남자 3칸</p>
+                      <p>010-0000-0000</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!--infor_detail-->
+              <div class="info02">
+                <label for="infor02">
+                  <i class="fa-solid fa-restroom"></i>
+                </label>
+              </div>
+
+              <div class="infor_detail02_1">
+                <label for="infor02_1_close" class="infor02_1_close">
+                  <i class="fa-solid fa-xmark"></i>
+                </label>
+                <div class="infor_img">
+                  <img src="./img/way_infor_img03.jpg" alt="">
+                </div>
+                <div class="infor_text">
+                  <div class="infor_top">
+                    <p>공용주차장</p>
+                  </div>
+                  <div class="infor_bot">
+                    <div class="infor_left">
+                      <p>거리(내 위치 기준)</p>
+                      <p>시설정보</p>
+                      <p>전화번호</p>
+                    </div>
+                    <div class="infor_right">
+                      <p>540M</p>
+                      <p>4,000대</p>
+                      <p>010-0000-0000</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!--infor_detail-->
+              <div class="info02_1">
+                <label for="infor02_1">
+                  <i class="fa-solid fa-square-parking"></i>
+                </label>
+              </div>
+            </div>
+
+          </div><!--way_sheet01-->
+          <div class="way_sheet01">
+            <div class="way_box">
+              <input type="radio" name="infor3" id="infor03">
+              <input type="radio" name="infor3" id="infor03_1">
+              <input type="radio" name="infor3" id="infor03_close">
+              <input type="radio" name="infor3" id="infor03_1_close">
+              <div class="map">
+                <img src="./img/map03_pc.jpg" alt="">
+              </div>
+
+              <div class="infor_detail03">
+                <label for="infor03_close" class="infor03_close">
+                  <i class="fa-solid fa-xmark"></i>
+                </label>
+                <div class="infor_img">
+                  <img src="./img/way_infor_img.jpg" alt="">
+                </div>
+                <div class="infor_text">
+                  <div class="infor_top">
+                    <p>공중화장실</p>
+                  </div>
+                  <div class="infor_bot">
+                    <div class="infor_left">
+                      <p>거리(내 위치 기준)</p>
+                      <p>시설정보</p>
+                      <p>전화번호</p>
+                    </div>
+                    <div class="infor_right">
+                      <p>540M</p>
+                      <p>여자 3칸, 남자 3칸</p>
+                      <p>010-0000-0000</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!--infor_detail-->
+              <div class="info03">
+                <label for="infor03">
+                  <i class="fa-solid fa-restroom"></i>
+                </label>
+              </div>
+
+              <div class="infor_detail03_1">
+                <label for="infor03_1_close" class="infor03_1_close">
+                  <i class="fa-solid fa-xmark"></i>
+                </label>
+                <div class="infor_img">
+                  <img src="./img/way_infor_img02.jpg" alt="">
+                </div>
+                <div class="infor_text">
+                  <div class="infor_top">
+                    <p>공용주차장</p>
+                  </div>
+                  <div class="infor_bot">
+                    <div class="infor_left">
+                      <p>거리(내 위치 기준)</p>
+                      <p>시설정보</p>
+                      <p>전화번호</p>
+                    </div>
+                    <div class="infor_right">
+                      <p>540M</p>
+                      <p>500대</p>
+                      <p>010-0000-0000</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!--infor_detail-->
+              <div class="info03_1">
+                <label for="infor03_1">
+                  <i class="fa-solid fa-square-parking"></i>
+                </label>
+              </div>
+            </div>
+          </div><!--way_sheet01-->
+          <div class="way_sheet01">
+            <div class="way_box">
+              <input type="radio" name="infor4" id="infor04">
+              <input type="radio" name="infor4" id="infor04_1">
+              <input type="radio" name="infor4" id="infor04_close">
+              <input type="radio" name="infor4" id="infor04_1_close">
+              <div class="map">
+                <img src="./img/map04_pc.jpg" alt="">
+              </div>
+
+              <div class="infor_detail04">
+                <label for="infor04_close" class="infor04_close">
+                  <i class="fa-solid fa-xmark"></i>
+                </label>
+                <div class="infor_img">
+                  <img src="./img/way_infor_img01.jpg" alt="">
+                </div>
+                <div class="infor_text">
+                  <div class="infor_top">
+                    <p>공중화장실</p>
+                  </div>
+                  <div class="infor_bot">
+                    <div class="infor_left">
+                      <p>거리(내 위치 기준)</p>
+                      <p>시설정보</p>
+                      <p>전화번호</p>
+                    </div>
+                    <div class="infor_right">
+                      <p>540M</p>
+                      <p>여자 3칸, 남자 3칸</p>
+                      <p>010-0000-0000</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!--infor_detail-->
+              <div class="info04">
+                <label for="infor04">
+                  <i class="fa-solid fa-restroom"></i>
+                </label>
+              </div>
+
+              <div class="infor_detail04_1">
+                <label for="infor04_1_close" class="infor04_1_close">
+                  <i class="fa-solid fa-xmark"></i>
+                </label>
+                <div class="infor_img">
+                  <img src="./img/way_infor_img03.jpg" alt="">
+                </div>
+                <div class="infor_text">
+                  <div class="infor_top">
+                    <p>공중화장실</p>
+                  </div>
+                  <div class="infor_bot">
+                    <div class="infor_left">
+                      <p>거리(내 위치 기준)</p>
+                      <p>시설정보</p>
+                      <p>전화번호</p>
+                    </div>
+                    <div class="infor_right">
+                      <p>540M</p>
+                      <p>1,200대</p>
+                      <p>010-0000-0000</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!--infor_detail-->
+              <div class="info04_1">
+                <label for="infor04_1">
+                  <i class="fa-solid fa-square-parking"></i>
+                </label>
+              </div>
+            </div>
+          </div><!--way_sheet01-->
+        </div>
+      </section>
+      <section class="content05">
+        <div class="news_title">
+          <p>제주 생생소식통</p>
+        </div>
+        <div class="content05_box">
+          <div class="news_box">
+            <div class="news">
+              <a href="https://youtube.com/shorts/BPJMonFXCkc?feature=share"><img src="./img/news01.jpg" alt=""></a>
+              <div class="news_text">
+                <p>7월 제주도 여행 가볼 만한 곳 <br>추천 BEST10 모음!</p>
+              </div>
+            </div><!--news-->
+            <div class="news">
+              <a href="https://www.youtube.com/shorts/ZL-wAowa1oI"><img src="./img/news02.jpg" alt=""></a>
+              <div class="news_text">
+                <p>제주 서귀포시 <br>여행 관광지 추천!</p>
+              </div>
+            </div><!--news-->
+            <div class="news">
+              <a href="https://www.youtube.com/shorts/eMAXCAVgxLw"><img src="./img/news03.jpg" alt=""></a>
+              <div class="news_text">
+                <p>1박 10만원대, <br>제주도 오션뷰 가성비 숙소</p>
+              </div>
+            </div><!--news-->
+            <div class="news">
+              <a href="https://www.youtube.com/shorts/Dy4vgDrEnOo"><img src="./img/news04.jpg" alt=""></a>
+              <div class="news_text">
+                <p>제주 동쪽 힐링 산책 <br>삼달리 촬영지</p>
+              </div>
+            </div><!--news-->
+            <div class="news">
+              <a href="https://www.youtube.com/shorts/Q5unvc_O1PE?feature=share"><img src="./img/news05.jpg" alt=""></a>
+              <div class="news_text">
+                <p>제주 서쪽 <br>가볼만한 곳 BEST5</p>
+              </div>
+            </div><!--news-->
+            <div class="news">
+              <a href="https://www.youtube.com/shorts/T3Eov1DHaTI?feature=share"><img src="./img/news06.jpg" alt=""></a>
+              <div class="news_text">
+                <p>제주 동쪽 <br>가볼만한 곳 BEST5</p>
+              </div>
+            </div><!--news-->
+            <div class="news">
+              <a href="https://www.youtube.com/shorts/RXfCdUcQRtk?feature=share"><img src="./img/news12.jpg" alt=""></a>
+              <div class="news_text">
+                <p>모르면 손해! <br>서쪽 감성코스 최애만 모아왔어요</p>
+              </div>
+            </div><!--news-->
+            <div class="news">
+              <a href="https://www.https://www.youtube.com/shorts/zFP1VHOM2zE?feature=share"><img src="./img/news09.jpg"
+                  alt=""></a>
+              <div class="news_text">
+                <p>1월 제주도 여행 <br>가볼만한 곳 추천BEST 모음!</p>
+              </div>
+            </div><!--news-->
+            <div class="news">
+              <a href="https://www.youtube.com/shorts/biZ3-U6PV4I?feature=share"><img src="./img/news17.jpg" alt=""></a>
+              <div class="news_text">
+                <p>조용하고 감성있는 <br>제주 숙소 추천 TOP3</p>
+              </div>
+            </div><!--news-->
+            <div class="news">
+              <a href="https://www.youtube.com/shorts/1vIsOVDzZVQ"><img src="./img/news08.jpg" alt=""></a>
+              <div class="news_text">
+                <p>제주체크인 겨울에 더 좋은 <br>제주 여행지 BEST5</p>
+              </div>
+            </div><!--news-->
+          </div>
+        </div>
+      </section><!--content05-->
+      <div class="notice_box">
+        <div class="notice_title">
+          <a href="#!">
+            <p>공지사항</p>
+          </a>
+        </div>
+        <div class="noticeA">
+          <div class="notice01">
+            <div class="notice">
+              <div class="notice_left">
+                <p>[관광안내]</p>
+              </div>
+              <div class="notice_right">
+                <p>제주시 관광안내소는 어디에 있나요?</p>
+                <p>제주 관광 정보 센터는 제주 특별자치도 제주시 선덕로23, 제주웰컴센터, 제주 관광정보 센터(1층, 로비)에 위치합니다. 버스로 연동 주민센터 정류장에서 하차 후 약 278m
+                  이동가능합니다.
+                </p>
+              </div>
+            </div><!--notice-->
+            <div class="notice">
+              <div class="notice_left">
+                <p>[숙박·편의]</p>
+              </div>
+              <div class="notice_right">
+                <p>긴급 상황 시 어디에 전화해야 하나요?</p>
+                <p>경찰 112, 소방/구급 119. 한국어가 어려우면 1330(관광통역안내전화)으로 전화하면 통역연결 및 119/112 3자 통화가 가능합니다.</p>
+              </div>
+            </div><!--notice-->
+          </div>
+          <div class="notice02">
+            <div class="notice">
+              <div class="notice_left">
+                <p>[쇼핑]</p>
+              </div>
+              <div class="notice_right">
+                <p>제주도의 대표 쇼핑 명소는 어디인가요?</p>
+                <p>동문 재래시장, 서귀포 매일 올레 시장, 제주시 민속 오일 시장, 이니스프리 제주 하우스점, 더 아일랜드가 명품거리가 대표적입니다.</p>
+              </div>
+            </div><!--notice-->
+            <div class="notice">
+              <div class="notice_left">
+                <p>[교통]</p>
+              </div>
+              <div class="notice_right">
+                <p>제주도의 교통편은 어떻게 되나요?</p>
+                <p>지형적 특징으로 하늘길과 바닷길, 항공권과 여객선을 이용해야한다. 제주 내에서 이동수단은 렌터카, 버스, 전세버스, 택시 등 다양해 여정과 예산에 따라 알맞게 이용할 수 있다.
+                </p>
+              </div>
+            </div><!--notice-->
+          </div>
+        </div>
+      </div><!--notice_box-->
+    </div><!--wrap-->
+    <div class="footer_outer">
+      <div class="footer_top_outer">
+        <div class="footer_top">
+          <div class="footer_left">
+            <div class="left_inside">
+              <div>
+                <img src="./img/footer_logo_img01.png" alt="">
+              </div>
+              <div>
+                <img src="./img/footer_logo_img02.png" alt="">
+              </div>
+              <div>
+                <img src="./img/footer_logo_img03.png" alt="">
+              </div>
+              <div>
+                <img src="./img/footer_logo_img04.png" alt="">
+              </div>
+              <div>
+                <img src="./img/footer_logo_img06.png" alt="">
+              </div>
+              <div>
+                <img src="./img/footer_logo_img07.png" alt="">
+              </div>
+              <div>
+                <img src="./img/footer_logo_img08.png" alt="">
+              </div>
+              <div>
+                <img src="./img/footer_logo_img09.png" alt="">
+              </div>
+              <div>
+                <img src="./img/footer_logo_img10.png" alt="">
+              </div>
+              <div>
+                <img src="./img/footer_logo_img11.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer_bot">
+          <div class="footer_bot_right">
+            <div class="footer_sns">
+              <span>
+                <a href="https://www.instagram.com/visitjeju.kr/"><i class="fa-brands fa-instagram"></i></a>
+              </span>
+              <span>
+                <a href="youtube.com/@VISITJEJU"><i class="fa-brands fa-youtube"></i></a>
+              </span>
+              <span>
+                <a href="https://www.facebook.com/visitjeju.kr/"><i class="fa-brands fa-facebook-f"></i></a>
+              </span>
+            </div>
+            <div class="tel">
+              <p>고객센터</p>
+              <p>064-740-6000</p>
+            </div>
+          </div>
+          <div class="footer_bot_left">
+            <div class="footer_logo">
+              <div>
+                <img src="./img/logo.png" alt="">
+              </div>
+              <div>
+                <img src="./img/footer_logo_img10.png" alt="">
+              </div>
+            </div>
+            <div class="footer_detail">
+              <div class="detail01">
+                <p>(63122) 제주특별자치도 제주시 선덕로 23(연동) 제주웰컴센터</p>
+              </div>
+              <div class="detail02">
+                <p>관광문의 : 제주관광공사</p>
+                <p>Tel : 064-740-6000~1 </p>
+                <p>|</p>
+                <p>FAX : 64-740-6090</p>
+              </div>
+              <div class="detail03">
+                <p>사업자등록번호 : 616-82-21432</p>
+              </div>
+              <div class="detail04">
+                <p>관광불편신고 : 제주관광불편신고센터(1533-0082)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <asied class="aside">
+      <a href="#btn_top">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+    </asied>
+  </body>
+</div>
+
+
+</html>

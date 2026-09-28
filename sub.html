@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VISITJEJU</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="./sub.css">
+  <link rel="stylesheet" href="./header.css">
+  <link rel="stylesheet" href="./footer.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="./sub.js"></script>
+</head>
+
+<body>
+ <div class="header_outer" id="btn_top">
+      <input type="checkbox" id="gnb02">
+      <input type="checkbox" id="gnb03">
+      <input type="checkbox" id="gnb04">
+      <input type="checkbox" id="gnb05">
+      <input type="checkbox" id="lang">
+      <header class="header">
+        <div class="logo">
+          <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+        </div><!--logo-->
+        <button type="button" class="weather_box">
+          <div class="weather_img">
+            <img src="./img/weather_img01.png" alt="weather">
+          </div>
+          <div class="temp">
+            <p>27º</p>
+          </div>
+        </button><!--weather_box-->
+
+        <div class="mypage_box">
+          <a href="#!">
+            <i class="fa-solid fa-user"></i>
+          </a>
+        </div><!--mypage_box-->
+
+        <button type="button" class="lang_type_box">
+          <i class="fa-solid fa-globe"></i>
+        </button><!--lang_type-->
+
+        <button type="button" class="lang_size_btn">
+          <span>가</span>
+        </button><!--lang_size_btn-->
+
+        <button type="button" class="search_btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button><!--search_btn-->
+
+        <button type="button" class="gnb_btn">
+          <i class="fa-solid fa-bars"></i>
+        </button><!--gnb_btn-->
+
+      </header><!--header-->
+      <div class="weather_box_down">
+        <div class="weather_top">
+          <div class="top_top">
+            <button type="button" class="weather_close">
+              <i class="fa-solid fa-xmark"></i>
+            </button><!--weather_close-->
+            <div>
+              <img src="./img/weather_img01.png" alt="weather">
+            </div>
+            <p>29º</p>
+            <p>흐림</p>
+          </div><!--top_top-->
+          <div class="top_bot">
+            <p>
+              <i class="fa-solid fa-caret-up"></i>32º
+            </p>
+            <p>
+              <i class="fa-solid fa-caret-down"></i>25º
+            </p>
+            <p>
+              <i class="fa-solid fa-circle"></i>미세먼지 좋음
+            </p>
+          </div><!--top_bot-->
+        </div><!--weather_top-->
+        <div class="weather_bot">
+          <div class="bot_top">
+            <a href="https://www.kma.go.kr/jeju/html/main/index.jsp">
+              <p>기상청 보러가기</p>
+            </a>
+          </div><!--bot_top-->
+          <div class="bot_mid">
+            <div class="weather">
+              <div class="weather_right">
+                <p>내일</p>
+                <p>07/02</p>
+              </div>
+              <div class="weather_mid">
+                <div>
+                  <img src="./img/weather_img01.png" alt="weather">
+                </div>
+                <p>소나기</p>
+              </div>
+              <div class="weather_right">
+                <p>31º</p>
+                <p>23º</p>
+              </div>
+            </div><!--weather-->
+            <div class="weather">
+              <div class="weather_right">
+                <p>모레</p>
+                <p>07/03</p>
+              </div>
+              <div class="weather_mid">
+                <div>
+                  <img src="./img/weather_img01.png" alt="weather">
+                </div>
+                <p>소나기</p>
+              </div>
+              <div class="weather_right">
+                <p>31º</p>
+                <p>23º</p>
+              </div>
+            </div><!--weather-->
+            <div class="weather">
+              <div class="weather_right">
+                <p>토</p>
+                <p>07/04</p>
+              </div>
+              <div class="weather_mid">
+                <div>
+                  <img src="./img/weather_img01.png" alt="weather">
+                </div>
+                <p>소나기</p>
+              </div>
+              <div class="weather_right">
+                <p>31º</p>
+                <p>23º</p>
+              </div>
+            </div><!--weather-->
+          </div><!--bot_mid-->
+          <div class="bot_bot">
+            <div class="bot_title">
+              <p>해양지수</p>
+            </div>
+            <div class="oceason">
+              <div class="sea_box">
+                <div class="sea">
+                  <div>
+                    <img src="./img/weather_sea_img01.jpg" alt="">
+                  </div>
+                  <p>제주시</p>
+                </div><!--sea-->
+                <div class="sea_num_box">
+                  <div class="sea_num">
+                    <p>파고</p>
+                    <p>0m</p>
+                  </div>
+                  <div class="sea_num01">
+                    <p>수온</p>
+                    <p>0.0s</p>
+                  </div>
+                </div><!--sea_num_box-->
+              </div><!--sea_box-->
+              <div class="sea_box">
+                <div class="sea">
+                  <div>
+                    <img src="./img/weather_sea_img02.jpg" alt="">
+                  </div>
+                  <p>서귀포시</p>
+                </div><!--sea-->
+                <div class="sea_num_box">
+                  <div class="sea_num">
+                    <p>파고</p>
+                    <p>0m</p>
+                  </div>
+                  <div class="sea_num01">
+                    <p>수온</p>
+                    <p>0.0s</p>
+                  </div>
+                </div><!--sea_num_box-->
+              </div><!--sea_box-->
+              <div class="sea_box">
+                <div class="sea">
+                  <div>
+                    <img src="./img/weather_sea_img03.jpg" alt="">
+                  </div>
+                  <p>애월</p>
+                </div><!--sea-->
+                <div class="sea_num_box">
+                  <div class="sea_num">
+                    <p>파고</p>
+                    <p>0m</p>
+                  </div>
+                  <div class="sea_num01">
+                    <p>수온</p>
+                    <p>0.0s</p>
+                  </div>
+                </div><!--sea_num_box-->
+              </div><!--sea_box-->
+              <div class="sea_box">
+                <div class="sea">
+                  <div>
+                    <img src="./img/weather_sea_img04.jpg " alt="">
+                  </div>
+                  <p>성산</p>
+                </div><!--sea-->
+                <div class="sea_num_box">
+                  <div class="sea_num">
+                    <p>파고</p>
+                    <p>0m</p>
+                  </div>
+                  <div class="sea_num01">
+                    <p>수온</p>
+                    <p>0.0s</p>
+                  </div>
+                </div><!--sea_num_box-->
+              </div><!--sea_box-->
+            </div><!--oceason-->
+          </div>
+        </div>
+      </div><!--weather_box_down-->
+      <div class="lang_type">
+        <a href="#!">
+          <p>KOR</p>
+        </a>
+        <a href="#!">
+          <p>Eng</p>
+        </a>
+        <a href="#!">
+          <p>CHA</p>
+        </a>
+      </div><!--lang_type-->
+      <div class="lang_size_down">
+        <div class="lang_box">
+          <span>+</span>
+          <span>초기화</span>
+          <span>-</span>
+        </div>
+      </div><!--lang_size_down-->
+      <div class="search_sheet">
+        <div class="search_box">
+          <div class="search">
+            <input type="search" placeholder="검색어를 입력하세요"><i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="search_bot">
+            <div class="search_title">
+              <p>인기 검색어</p>
+            </div>
+            <div class="search_tag">
+              <span><a href="#">#유네스코</a></span>
+              <span><a href="#">#액티비티</a></span>
+              <span><a href="#">#반려동물</a></span>
+              <span><a href="#">#비오는 날</a></span>
+            </div>
+          </div>
+        </div>
+      </div><!--search_sheet-->
+      <nav class="gnb_outer">
+        <div class="gnb_menu">
+          <div class="gnb_menu_top">
+            <span><a href="#">로그인</a></span>
+            <span><a href="#">마이페이지</a></span>
+            <select name="lang_side" id="lang_side" class="lang_side">
+              <option value="lang_side"><a href="#">KOR</a></option>
+              <option value="lang_side"><a href="#">ENG</a></option>
+              <option value="lang_side"><a href="#">CHA</a></option>
+            </select>
+          </div><!--gnb_menu_top-->
+          <div class="gnb_box">
+            <label for="gnb01" class="gnb01">
+              제주 놀멍<i class="fa-solid fa-angle-down"></i>
+            </label>
+            <ul class="lnb01">
+              <li><a href="./sub.html">지금 제주는</a></li>
+              <li><a href="#">제주 관광지</a></li>
+              <li><a href="#">음식</a></li>
+              <li><a href="#">숙박</a></li>
+              <li><a href="#">쇼핑</a></li>
+            </ul>
+            <label for="gnb02" class="gnb02">
+              <a href="#">AI 추천</a><i class="fa-solid fa-angle-down"></i>
+            </label>
+            <ul class="lnb02">
+              <li><a href="#">추천 여행지</a></li>
+              <li><a href="#">추천 코스</a></li>
+            </ul>
+            <label for="gnb03" class="gnb03">
+              <a href="#">K-pick</a><i class="fa-solid fa-angle-down"></i>
+            </label>
+            <ul class="lnb03">
+              <li><a href="#">Artist-pick</a></li>
+              <li><a href="#">드라마 촬영지</a></li>
+            </ul>
+            <label for="gnb04" class="gnb04">
+              <a href="#">오름길</a><i class="fa-solid fa-angle-down"></i>
+            </label>
+            <ul class="lnb04">
+              <li><a href="#">오름길 소개</a></li>
+              <li><a href="#">코스 안내</a></li>
+            </ul>
+            <label for="gnb05" class="gnb05">
+              <a href="#">제주 소식통</a><i class="fa-solid fa-angle-down"></i>
+            </label>
+            <ul class="lnb05">
+              <li><a href="#">여행 소식</a></li>
+              <li><a href="#">공지</a></li>
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">관광 안내소</a></li>
+              <li><a href="#">교통 정보</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav><!--gnb_outer-->
+      <div class="gnb_wrap">
+        <div class="gnb_out_box">
+          <div class="gnb_out01">
+            <p><a href="#!">제주 놀멍</a></p>
+          </div>
+          <div class="gnb_out02">
+            <p><a href="#!">AI추천</a></p>
+          </div>
+          <div class="gnb_out03">
+            <p><a href="#!">K-pick</a></p>
+          </div>
+          <div class="gnb_out04">
+            <p><a href="#!">오름길</a></p>
+          </div>
+          <div class="gnb_out05">
+            <p><a href="#!">제주 소식통</a></p>
+          </div>
+          <div class="gnb_full_down">
+            <div class="gnb_down">
+              <div class="gnb_down01">
+                <p><a href="./sub.html">지금 제주는</a></p>
+                <p><a href="#!">제주 관광지</a></p>
+                <p><a href="#!">음식</a></p>
+                <p><a href="#!">숙박</a></p>
+                <p><a href="#!">쇼핑</a></p>
+              </div>
+              <div class="gnb_down02">
+                <p><a href="#!">추천 여행지</a></p>
+                <p><a href="#!">추천 코스</a></p>
+              </div>
+              <div class="gnb_down03">
+                <p><a href="#!">Artist-pick</a></p>
+                <p><a href="#!">드라마 촬영지</a></p>
+              </div>
+              <div class="gnb_down04">
+                <p><a href="#!">오름길 소개</a></p>
+                <p><a href="#!">코스 안내</a></p>
+              </div>
+              <div class="gnb_down05">
+                <p><a href="#!">여행소식</a></p>
+                <p><a href="#!">공지</a></p>
+                <p><a href="#!">이벤트</a></p>
+                <p><a href="#!">관광 안내소</a></p>
+                <p><a href="#!">교통 정보</a></p>
+              </div>
+            </div>
+          </div><!--gnb_full_down-->
+        </div><!--gnb_out_box-->
+      </div>
+    </div><!--header_outer-->
+  <div class="wrap">
+    <div class="top">
+      <div class="top_left">
+        <i class="fa-regular fa-house"></i>
+        <select name="breadscrum" id="breadscrum" class="breadscrum">
+          <option value="breadscrum">
+            <a href="#">제주 놀멍</a>
+          </option>
+          <option value="breadscrum">
+            <a href="#">AI추천</a>
+          </option>
+          <option value="breadscrum">
+            <a href="#">K-Pick</a>
+          </option>
+          <option value="breadscrum">
+            <a href="#">오름길</a>
+          </option>
+          <option value="breadscrum">
+            <a href="#">제주소식통</a>
+          </option>
+        </select>
+      </div>
+      <div class="top_mid">
+        <span><i class="fa-solid fa-angle-right"></i></span>
+      </div>
+      <div class="top_right">
+        <p><a href="#">지금 제주는</a></p>
+      </div>
+    </div><!--top-->
+    <div class="title">
+      <p>지금 제주는</p>
+    </div><!--title-->
+    <div class="calendar">
+      <div class="calendar_title">
+        <p>2026년 7월</p>
+      </div>
+      <input type="radio" name="cale" id="cale01">
+      <input type="radio" name="cale" id="cale02">
+      <input type="radio" name="cale" id="cale03" checked>
+      <input type="radio" name="cale" id="cale04">
+      <input type="radio" name="cale" id="cale05">
+      <div class="calendar_box">
+        <span><i class="fa-solid fa-angle-left"></i></span>
+        <div class="calendar_mid">
+          <label for="cale01">5월</label>
+          <label for="cale02">6월</label>
+          <label for="cale03">7월</label>
+          <label for="cale04">8월</label>
+          <label for="cale05">9월</label>
+        </div>
+        <span><i class="fa-solid fa-angle-right"></i></span>
+      </div>
+      <div class="line"></div>
+      <input type="checkbox" id="option_btn">
+      <div class="option">
+        <label for="option_btn" class="option_open">
+          <p>필터</p>
+          <i class="fa-solid fa-sliders"></i>
+        </label>
+      </div>
+      <div class="option_sheet">
+        <div class="option_box">
+          <label for="option_btn" class="option_close">
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+          <input type="radio" name="term" id="term01">
+          <input type="radio" name="term" id="term02">
+          <input type="radio" name="term" id="term03">
+          <div class="option_top">
+            <p>기간</p>
+            <label for="term01">전체</label>
+            <label for="term02">진행중</label>
+            <label for="term03">예정</label>
+          </div>
+          <input type="radio" name="tema" id="tema01">
+          <input type="radio" name="tema" id="tema02">
+          <input type="radio" name="tema" id="tema03">
+          <input type="radio" name="tema" id="tema04">
+          <input type="radio" name="tema" id="tema05">
+          <input type="radio" name="tema" id="tema06">
+          <div class="option_mid">
+            <p>테마</p>
+            <label for="tema01">전체</label>
+            <label for="tema02">장터</label>
+            <label for="tema03">꽃</label>
+            <label for="tema04">산</label>
+            <label for="tema05">물</label>
+            <label for="tema06">소리</label>
+          </div>
+          <input type="radio" name="cash" id="cash01">
+          <input type="radio" name="cash" id="cash02">
+          <input type="radio" name="cash" id="cash03">
+          <input type="radio" name="cash" id="cash04">
+          <input type="radio" name="cash" id="cash05">
+          <div class="option_bot">
+            <p>가격</p>
+            <div class="bot">
+              <label for="cash01">전체</label>
+              <label for="cash02">1만원 미만</label>
+              <label for="cash03">1만원 ~ 3만원 미만</label>
+              <div class="option_bot_bot">
+                <label for="cash04">3만원 ~ 5만원 미만</label>
+                <label for="cash05">5만원 이상</label>
+              </div>
+            </div>
+          </div>
+        </div><!--option_box-->
+        <div class="btn_box">
+          <button type="button" class="reset_btn" id="reset_btn">
+            초기화
+          </button>
+          <button type="button" class="set_btn" id="set_btn">
+            적용
+          </button>
+        </div>
+      </div><!--option_sheet-->
+      <div class="calendar_sheet">
+        <div class="sheet01">
+          <div class="festivalA">
+            <div class="festival01">
+              <div class="festival">
+                <div class="festival_img">
+                  <img src="./img/festivities_img09_mobile_sub.jpg" alt="">
+                </div>
+                <div class="festival_title">
+                  <p>남국재견</p>
+                </div>
+                <div class="festival_detail">
+                  <div class="fest01">
+                    <p><i class="fa-solid fa-ticket"></i></p>
+                    <p>무료</p>
+                  </div>
+                  <div class="fest02">
+                    <p><i class="fa-solid fa-location-dot"></i></p>
+                    <p>제주시 조천읍 남조로 2023 돌문화공원 오백장군갤러리 제1-5전시장</p>
+                  </div>
+                </div>
+                <div class="festival_term">
+                  <p><i class="fa-regular fa-calendar"></i></p>
+                  <p>2026.01.01~2026.12.31</p>
+                </div>
+                <div class="festival_bot">
+                  <div class="booking">
+                    <p>예매하기</p>
+                  </div>
+                  <button type="button" class="heart">
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+              </div><!--festival-->
+              <div class="festival">
+                <div class="festival_img">
+                  <img src="./img/festivities_img11_mobile_sub.jpg" alt="">
+                </div>
+                <div class="festival_title">
+                  <p>곶자왈:숨결의 시간</p>
+                </div>
+                <div class="festival_detail">
+                  <div class="fest01">
+                    <p><i class="fa-solid fa-ticket"></i></p>
+                    <p>어른 2,000원/청소년·군인 1,000원/어린이 500원</p>
+                  </div>
+                  <div class="fest02">
+                    <p><i class="fa-solid fa-location-dot"></i></p>
+                    <p>제주현대미술관 제 1기획전시실</p>
+                  </div>
+                </div>
+                <div class="festival_term">
+                  <p><i class="fa-regular fa-calendar"></i></p>
+                  <p>2026.04.10~2026.06.28</p>
+                </div>
+                <div class="festival_bot">
+                  <div class="booking">
+                    <p>예매하기</p>
+                  </div>
+                  <div class="heart">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+              </div><!--festival-->
+            </div><!--festival01-->
+            <div class="festival02">
+              <div class="festival">
+                <div class="festival_img">
+                  <img src="./img/festivities_img12_mobile_sub.jpg" alt="">
+                </div>
+                <div class="festival_title">
+                  <p>서귀포칠십리축제</p>
+                  </label>
+                </div>
+                <div class="festival_detail">
+                  <div class="fest01">
+                    <p><i class="fa-solid fa-ticket"></i></p>
+                    <p>무료</p>
+                  </div>
+                  <div class="fest02">
+                    <p><i class="fa-solid fa-location-dot"></i></p>
+                    <p>제주특별자치도 서귀포시 서홍동 684 천지연폭포 인근 주차장</p>
+                  </div>
+                </div>
+                <div class="festival_term">
+                  <p><i class="fa-regular fa-calendar"></i></p>
+                  <p>2026.01.01~2026.12.31</p>
+                </div>
+                <div class="festival_bot">
+                  <div class="booking">
+                    <p>예매하기</p>
+                  </div>
+                  <div class="heart">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+              </div><!--festival-->
+              <div class="festival">
+                <div class="festival_img">
+                  <img src="./img/festivities_img17_mobile_sub.jpg" alt="">
+                </div>
+                <div class="festival_title">
+                  <p>제주신화야살강길</p>
+                </div>
+                <div class="festival_detail">
+                  <div class="fest01">
+                    <p><i class="fa-solid fa-ticket"></i></p>
+                    <p>30,000원</p>
+                  </div>
+                  <div class="fest02">
+                    <p><i class="fa-solid fa-location-dot"></i></p>
+                    <p>제주특별자치도 서귀포시 남성중로 2-15(서홍동, 천지연매표소) 천지연매표소 앞</p>
+                  </div>
+                </div>
+                <div class="festival_term">
+                  <p><i class="fa-regular fa-calendar"></i></p>
+                  <p>2026.06.14~2026.08.17</p>
+                </div>
+                <div class="festival_bot">
+                  <div class="booking">
+                    <p>예매하기</p>
+                  </div>
+                  <div class="heart">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+              </div><!--festival-->
+            </div>
+          </div><!--festivalA-->
+        </div><!--sheet01-->
+        <div class="sheet02">
+          <div class="festivalA">
+            <div class="festival01">
+              <div class="festival">
+                <div class="festival_img">
+                  <img src="./img/festivities_img21_mobile_sub.jpg" alt="">
+                </div>
+                <div class="festival_title">
+                  <p>야크마을 밤산책</p>
+                </div>
+                <div class="festival_detail">
+                  <div class="fest01">
+                    <p><i class="fa-solid fa-ticket"></i></p>
+                    <p>무료</p>
+                  </div>
+                  <div class="fest02">
+                    <p><i class="fa-solid fa-location-dot"></i></p>
+                    <p>야크마을 잔디광장 일원</p>
+                  </div>
+                </div>
+                <div class="festival_term">
+                  <p><i class="fa-regular fa-calendar"></i></p>
+                  <p>2026.07.31~2026.08.29</p>
+                </div>
+                <div class="festival_bot">
+                  <div class="booking">
+                    <p>예매하기</p>
+                  </div>
+                  <div class="heart">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+              </div><!--festival-->
+              <div class="festival">
+                <div class="festival_img">
+                  <img src="./img/festivities_img01_mobile_sub.jpg" alt="">
+                </div>
+                <div class="festival_title">
+                  <p>문화가 있는 날</p>
+                </div>
+                <div class="festival_detail">
+                  <div class="fest01">
+                    <p><i class="fa-solid fa-ticket"></i></p>
+                    <p>무료</p>
+                  </div>
+                  <div class="fest02">
+                    <p><i class="fa-solid fa-location-dot"></i></p>
+                    <p>제주특별자치도 제주시 오복 4길 25</p>
+                  </div>
+                </div>
+                <div class="festival_term">
+                  <p><i class="fa-regular fa-calendar"></i></p>
+                  <p>2026.01.01~2026.12.31</p>
+                </div>
+                <div class="festival_bot">
+                  <div class="booking">
+                    <p>예매하기</p>
+                  </div>
+                  <div class="heart">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+              </div><!--festival-->
+            </div><!--festival01-->
+            <div class="festival02">
+              <div class="festival">
+                <div class="festival_img">
+                  <img src="./img/festivities_img04_mobile_sub.jpg" alt="">
+                </div>
+                <div class="festival_title">
+                  <p>휴애리 수국축제</p>
+                </div>
+                <div class="festival_detail">
+                  <div class="fest01">
+                    <p><i class="fa-solid fa-ticket"></i></p>
+                    <p>성인 13,000원/청소년11,000원/어린이10,000원</p>
+                  </div>
+                  <div class="fest02">
+                    <p><i class="fa-solid fa-location-dot"></i></p>
+                    <p>제주특별자치도 서귀포시 남원읍 신례동로 256</p>
+                  </div>
+                </div>
+                <div class="festival_term">
+                  <p><i class="fa-regular fa-calendar"></i></p>
+                  <p>2026.01.01~2026.12.31</p>
+                </div>
+                <div class="festival_bot">
+                  <div class="booking">
+                    <p>예매하기</p>
+                  </div>
+                  <div class="heart">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+              </div><!--festival-->
+              <div class="festival">
+                <div class="festival_img">
+                  <img src="./img/festivities_img10_mobile_sub.jpg" alt="">
+                </div>
+                <div class="festival_title">
+                  <p>제주드림댄스 축제</p>
+                </div>
+                <div class="festival_detail">
+                  <div class="fest01">
+                    <p><i class="fa-solid fa-ticket"></i></p>
+                    <p>무료</p>
+                  </div>
+                  <div class="fest02">
+                    <p><i class="fa-solid fa-location-dot"></i></p>
+                    <p>제주특별자치도 제주시 한림읍 한림로 247</p>
+                  </div>
+                </div>
+                <div class="festival_term">
+                  <p><i class="fa-regular fa-calendar"></i></p>
+                  <p>2026.06.13~2026.06.30</p>
+                </div>
+                <div class="festival_bot">
+                  <div class="booking">
+                    <p>예매하기</p>
+                  </div>
+                  <div class="heart">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+              </div><!--festival-->
+            </div>
+          </div><!--festivalA-->
+        </div><!--sheet02-->
+        <div class="sheet03">
+          <div class="fest_top">
+            <div class="festivalA">
+              <div class="festival01">
+                <div class="festival">
+                  <div class="festival_img">
+                    <img src="./img/festivities_img14_mobile_sub.jpg" alt="">
+                  </div>
+                  <div class="festival_title">
+                    <p>남들과 다르게,지키다 제주</p>
+                  </div>
+                  <div class="festival_detail">
+                    <div class="fest01">
+                      <p><i class="fa-solid fa-ticket"></i></p>
+                      <p>무료</p>
+                    </div>
+                    <div class="fest02">
+                      <p><i class="fa-solid fa-location-dot"></i></p>
+                      <p>제주특별자치도 제주시 관덕로 36, 갤러리세이브</p>
+                    </div>
+                  </div>
+                  <div class="festival_term">
+                    <p><i class="fa-regular fa-calendar"></i></p>
+                    <p>2026.07.02~2026.02.13</p>
+                  </div>
+                  <div class="festival_bot">
+                    <div class="booking">
+                      <p>예매하기</p>
+                    </div>
+                    <div class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
+                </div><!--festival-->
+                <div class="festival">
+                  <div class="festival_img">
+                    <img src="./img/festivities_img15_mobile_sub.jpg" alt="">
+                  </div>
+                  <div class="festival_title">
+                    <p>세계유산축전</p>
+                  </div>
+                  <div class="festival_detail">
+                    <div class="fest01">
+                      <p><i class="fa-solid fa-ticket"></i></p>
+                      <p>무료</p>
+                    </div>
+                    <div class="fest02">
+                      <p><i class="fa-solid fa-location-dot"></i></p>
+                      <p>한라산 천연보호구역, 거문오름용암동굴계, 성산일출봉 응화구 등</p>
+                    </div>
+                  </div>
+                  <div class="festival_term">
+                    <p><i class="fa-regular fa-calendar"></i></p>
+                    <p>2026.10.03~2026.10.18</p>
+                  </div>
+                  <div class="festival_bot">
+                    <div class="booking">
+                      <p>예매하기</p>
+                    </div>
+                    <div class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
+                </div><!--festival-->
+              </div><!--festival01-->
+              <div class="festival02">
+                <div class="festival">
+                  <div class="festival_img">
+                    <img src="./img/festivities_img16_mobile_sub.jpg" alt="">
+                  </div>
+                  <div class="festival_title">
+                    <p>청춘마이크</p>
+                  </div>
+                  <div class="festival_detail">
+                    <div class="fest01">
+                      <p><i class="fa-solid fa-ticket"></i></p>
+                      <p>무료</p>
+                    </div>
+                    <div class="fest02">
+                      <p><i class="fa-solid fa-location-dot"></i></p>
+                      <p>제주시 조천읍 남조로 2023 돌문화공원 오백장군갤러리 제1-5전시장</p>
+                    </div>
+                  </div>
+                  <div class="festival_term">
+                    <p><i class="fa-regular fa-calendar"></i></p>
+                    <p>2026.01.01~2026.12.31</p>
+                  </div>
+                  <div class="festival_bot">
+                    <div class="booking">
+                      <p>예매하기</p>
+                    </div>
+                    <div class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
+                </div><!--festival-->
+                <div class="festival">
+                  <div class="festival_img">
+                    <img src="./img/festivities_img18_mobile_sub.jpg" alt="">
+                  </div>
+                  <div class="festival_title">
+                    <p>제주&교촌 페스타</p>
+                  </div>
+                  <div class="festival_detail">
+                    <div class="fest01">
+                      <p><i class="fa-solid fa-ticket"></i></p>
+                      <p>무료</p>
+                    </div>
+                    <div class="fest02">
+                      <p><i class="fa-solid fa-location-dot"></i></p>
+                      <p>서귀포시 중문cc골프장 및 중문관광단지 일대</p>
+                    </div>
+                  </div>
+                  <div class="festival_term">
+                    <p><i class="fa-regular fa-calendar"></i></p>
+                    <p>2026.09.12~2026.09.13</p>
+                  </div>
+                  <div class="festival_bot">
+                    <div class="booking">
+                      <p>예매하기</p>
+                    </div>
+                    <div class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
+                </div><!--festival-->
+              </div>
+            </div><!--festivalA-->
+          </div>
+          <div class="fest_bot">
+            <div class="festivalA">
+              <div class="festival01">
+                <div class="festival">
+                  <div class="festival_img">
+                    <img src="./img/festivities_img14_mobile_sub.jpg" alt="">
+                  </div>
+                  <div class="festival_title">
+                    <p>남들과 다르게,지키다 제주</p>
+                  </div>
+                  <div class="festival_detail">
+                    <div class="fest01">
+                      <p><i class="fa-solid fa-ticket"></i></p>
+                      <p>무료</p>
+                    </div>
+                    <div class="fest02">
+                      <p><i class="fa-solid fa-location-dot"></i></p>
+                      <p>제주특별자치도 제주시 관덕로 36, 갤러리세이브</p>
+                    </div>
+                  </div>
+                  <div class="festival_term">
+                    <p><i class="fa-regular fa-calendar"></i></p>
+                    <p>2026.07.02~2026.02.13</p>
+                  </div>
+                  <div class="festival_bot">
+                    <div class="booking">
+                      <p>예매하기</p>
+                    </div>
+                    <div class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
+                </div><!--festival-->
+                <div class="festival">
+                  <div class="festival_img">
+                    <img src="./img/festivities_img15_mobile_sub.jpg" alt="">
+                  </div>
+                  <div class="festival_title">
+                    <p>세계유산축전</p>
+                  </div>
+                  <div class="festival_detail">
+                    <div class="fest01">
+                      <p><i class="fa-solid fa-ticket"></i></p>
+                      <p>무료</p>
+                    </div>
+                    <div class="fest02">
+                      <p><i class="fa-solid fa-location-dot"></i></p>
+                      <p>한라산 천연보호구역, 거문오름용암동굴계, 성산일출봉 응화구 등</p>
+                    </div>
+                  </div>
+                  <div class="festival_term">
+                    <p><i class="fa-regular fa-calendar"></i></p>
+                    <p>2026.10.03~2026.10.18</p>
+                  </div>
+                  <div class="festival_bot">
+                    <div class="booking">
+                      <p>예매하기</p>
+                    </div>
+                    <div class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
+                </div><!--festival-->
+              </div><!--festival01-->
+              <div class="festival02">
+                <div class="festival">
+                  <div class="festival_img">
+                    <img src="./img/festivities_img16_mobile_sub.jpg" alt="">
+                  </div>
+                  <div class="festival_title">
+                    <p>청춘마이크</p>
+                  </div>
+                  <div class="festival_detail">
+                    <div class="fest01">
+                      <p><i class="fa-solid fa-ticket"></i></p>
+                      <p>무료</p>
+                    </div>
+                    <div class="fest02">
+                      <p><i class="fa-solid fa-location-dot"></i></p>
+                      <p>제주시 조천읍 남조로 2023 돌문화공원 오백장군갤러리 제1-5전시장</p>
+                    </div>
+                  </div>
+                  <div class="festival_term">
+                    <p><i class="fa-regular fa-calendar"></i></p>
+                    <p>2026.01.01~2026.12.31</p>
+                  </div>
+                  <div class="festival_bot">
+                    <div class="booking">
+                      <p>예매하기</p>
+                    </div>
+                    <div class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
+                </div><!--festival-->
+                <div class="festival">
+                  <div class="festival_img">
+                    <img src="./img/festivities_img18_mobile_sub.jpg" alt="">
+                  </div>
+                  <div class="festival_title">
+                    <p>제주&교촌 페스타</p>
+                  </div>
+                  <div class="festival_detail">
+                    <div class="fest01">
+                      <p><i class="fa-solid fa-ticket"></i></p>
+                      <p>무료</p>
+                    </div>
+                    <div class="fest02">
+                      <p><i class="fa-solid fa-location-dot"></i></p>
+                      <p>서귀포시 중문cc골프장 및 중문관광단지 일대</p>
+                    </div>
+                  </div>
+                  <div class="festival_term">
+                    <p><i class="fa-regular fa-calendar"></i></p>
+                    <p>2026.09.12~2026.09.13</p>
+                  </div>
+                  <div class="festival_bot">
+                    <div class="booking">
+                      <p>예매하기</p>
+                    </div>
+                    <div class="heart">
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
+                </div><!--festival-->
+              </div>
+            </div><!--festivalA-->
+          </div>
+          <div class="fest_btn">
+            <label for="btn_fest" class="fest_open">더보기</label>
+          </div>
+        </div><!--sheet03-->
+        <div class="sheet04">
+          <div class="festivalA">
+            <div class="festival01">
+              <div class="festival">
+                <div class="festival_img">
+                  <img src="./img/festivities_img19_mobile_sub.jpg" alt="">
+                </div>
+                <div class="festival_title">
+                  <p>초복</p>
+                </div>
+                <div class="festival_detail">
+                  <div class="fest01">
+                    <p><i class="fa-solid fa-ticket"></i></p>
+                    <p>무료</p>
+                  </div>
+                  <div class="fest02">
+                    <p><i class="fa-solid fa-location-dot"></i></p>
+                    <p>제주특별자치도 제주시 애월읍 하소로 765(유수암리) 하우스오브레퓨즈 2층 김선문</p>
+                  </div>
+                </div>
+                <div class="festival_term">
+                  <p><i class="fa-regular fa-calendar"></i></p>
+                  <p>2026.07.12~2026.07.15</p>
+                </div>
+                <div class="festival_bot">
+                  <div class="booking">
+                    <p>예매하기</p>
+                  </div>
+                  <div class="heart">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+              </div><!--festival-->
+              <div class="festival">
+                <div class="festival_img">
+                  <img src="./img/festivities_img20_mobile_sub.jpg" alt="">
+                </div>
+                <div class="festival_title">
+                  <p>푸파페 제주</p>
+                </div>
+                <div class="festival_detail">
+                  <div class="fest01">
+                    <p><i class="fa-solid fa-ticket"></i></p>
+                    <p>무료</p>
+                  </div>
+                  <div class="fest02">
+                    <p><i class="fa-solid fa-location-dot"></i></p>
+                    <p>제주특별자치도 서귀포시 중문관광로 224</p>
+                  </div>
+                </div>
+                <div class="festival_term">
+                  <p><i class="fa-regular fa-calendar"></i></p>
+                  <p>2026.01.01~2026.12.31</p>
+                </div>
+                <div class="festival_bot">
+                  <div class="booking">
+                    <p>예매하기</p>
+                  </div>
+                  <div class="heart">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+              </div><!--festival-->
+            </div><!--festival01-->
+            <div class="festival02">
+              <div class="festival">
+                <div class="festival_img">
+                  <img src="./img/festivities_img02_mobile_sub.jpg" alt="">
+                </div>
+                <div class="festival_title">
+                  <p>그래비티 퀘스트 제주</p>
+                </div>
+                <div class="festival_detail">
+                  <div class="fest01">
+                    <p><i class="fa-solid fa-ticket"></i></p>
+                    <p>무료</p>
+                  </div>
+                  <div class="fest02">
+                    <p><i class="fa-solid fa-location-dot"></i></p>
+                    <p>9.81파크 제주</p>
+                  </div>
+                </div>
+                <div class="festival_term">
+                  <p><i class="fa-regular fa-calendar"></i></p>
+                  <p>2026.01.01~2026.12.31</p>
+                </div>
+                <div class="festival_bot">
+                  <div class="booking">
+                    <p>예매하기</p>
+                  </div>
+                  <div class="heart">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+              </div><!--festival-->
+              <div class="festival">
+                <div class="festival_img">
+                  <img src="./img/festivities_img05_mobile_sub.jpg" alt="">
+                </div>
+                <div class="festival_title">
+                  <p>사라봉 굿나잇</p>
+                </div>
+                <div class="festival_detail">
+                  <div class="fest01">
+                    <p><i class="fa-solid fa-ticket"></i></p>
+                    <p>무료</p>
+                  </div>
+                  <div class="fest02">
+                    <p><i class="fa-solid fa-location-dot"></i></p>
+                    <p>제주칠머리당영등굿 전수관 공연장(사라봉동길 58)</p>
+                  </div>
+                </div>
+                <div class="festival_term">
+                  <p><i class="fa-regular fa-calendar"></i></p>
+                  <p>2026.01.01~2026.12.31</p>
+                </div>
+                <div class="festival_bot">
+                  <div class="booking">
+                    <p>예매하기</p>
+                  </div>
+                  <div class="heart">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+              </div><!--festival-->
+            </div>
+          </div><!--festivalA-->
+        </div><!--sheet04-->
+        <div class="sheet05">
+          <div class="festivalA">
+            <div class="festival01">
+              <div class="festival">
+                <div class="festival_img">
+                  <img src="./img/festivities_img06_mobile_sub.jpg" alt="">
+                </div>
+                <div class="festival_title">
+                  <p>금토금토 새연쇼</p>
+                </div>
+                <div class="festival_detail">
+                  <div class="fest01">
+                    <p><i class="fa-solid fa-ticket"></i></p>
+                    <p>무료</p>
+                  </div>
+                  <div class="fest02">
+                    <p><i class="fa-solid fa-location-dot"></i></p>
+                    <p>제주특별자치도 서귀포시 남성중로 43</p>
+                  </div>
+                </div>
+                <div class="festival_term">
+                  <p><i class="fa-regular fa-calendar"></i></p>
+                  <p>2026.01.01~2026.12.31</p>
+                </div>
+                <div class="festival_bot">
+                  <div class="booking">
+                    <p>예매하기</p>
+                  </div>
+                  <div class="heart">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+              </div><!--festival-->
+              <div class="festival">
+                <div class="festival_img">
+                  <img src="./img/festivities_img07_mobile_sub.jpg" alt="">
+                </div>
+                <div class="festival_title">
+                  <p>화산암반수원정대</p>
+                </div>
+                <div class="festival_detail">
+                  <div class="fest01">
+                    <p><i class="fa-solid fa-ticket"></i></p>
+                    <p>50,000원(2인권/주말 기준)</p>
+                  </div>
+                  <div class="fest02">
+                    <p><i class="fa-solid fa-location-dot"></i></p>
+                    <p>제주특별자치도 서귀포시 색달중앙로 162</p>
+                  </div>
+                </div>
+                <div class="festival_term">
+                  <p><i class="fa-regular fa-calendar"></i></p>
+                  <p>2026.01.01~2026.12.31</p>
+                </div>
+                <div class="festival_bot">
+                  <div class="booking">
+                    <p>예매하기</p>
+                  </div>
+                  <div class="heart">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+              </div><!--festival-->
+            </div><!--festival01-->
+            <div class="festival02">
+              <div class="festival">
+                <div class="festival_img">
+                  <img src="./img/festivities_img03_mobile_sub.jpg" alt="">
+                </div>
+                <div class="festival_title">
+                  <p>서귀포원도심 문화 페스티벌</p>
+                </div>
+                <div class="festival_detail">
+                  <div class="fest01">
+                    <p><i class="fa-solid fa-ticket"></i></p>
+                    <p>무료</p>
+                  </div>
+                  <div class="fest02">
+                    <p><i class="fa-solid fa-location-dot"></i></p>
+                    <p>이중섭로 일대(제주특별자치도 서귀포시 서귀동 416-2)</p>
+                  </div>
+                </div>
+                <div class="festival_term">
+                  <p><i class="fa-regular fa-calendar"></i></p>
+                  <p>2026.01.01~2026.12.31</p>
+                </div>
+                <div class="festival_bot">
+                  <div class="booking">
+                    <p>예매하기</p>
+                  </div>
+                  <div class="heart">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+              </div><!--festival-->
+              <div class="festival">
+                <div class="festival_img">
+                  <img src="./img/festivities_img13_mobile_sub.jpg" alt="">
+                </div>
+                <div class="festival_title">
+                  <p>고래의 아이</p>
+                </div>
+                <div class="festival_detail">
+                  <div class="fest01">
+                    <p><i class="fa-solid fa-ticket"></i></p>
+                    <p>무료</p>
+                  </div>
+                  <div class="fest02">
+                    <p><i class="fa-solid fa-location-dot"></i></p>
+                    <p>제주문예회관 대극장</p>
+                  </div>
+                </div>
+                <div class="festival_term">
+                  <p><i class="fa-regular fa-calendar"></i></p>
+                  <p>2026.01.01~2026.12.31</p>
+                </div>
+                <div class="festival_bot">
+                  <div class="booking">
+                    <p>예매하기</p>
+                  </div>
+                  <div class="heart">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+              </div><!--festival-->
+            </div>
+          </div><!--festivalA-->
+        </div><!--sheet05-->
+      </div>
+    </div><!--calendar-->
+  </div><!--wrap-->
+  <div class="footer_outer">
+      <div class="footer_top_outer">
+        <div class="footer_top">
+          <div class="footer_left">
+            <div class="left_inside">
+              <div>
+                <img src="./img/footer_logo_img01.png" alt="">
+              </div>
+              <div>
+                <img src="./img/footer_logo_img02.png" alt="">
+              </div>
+              <div>
+                <img src="./img/footer_logo_img03.png" alt="">
+              </div>
+              <div>
+                <img src="./img/footer_logo_img04.png" alt="">
+              </div>
+              <div>
+                <img src="./img/footer_logo_img06.png" alt="">
+              </div>
+              <div>
+                <img src="./img/footer_logo_img07.png" alt="">
+              </div>
+              <div>
+                <img src="./img/footer_logo_img08.png" alt="">
+              </div>
+              <div>
+                <img src="./img/footer_logo_img09.png" alt="">
+              </div>
+              <div>
+                <img src="./img/footer_logo_img10.png" alt="">
+              </div>
+              <div>
+                <img src="./img/footer_logo_img11.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer_bot">
+          <div class="footer_bot_right">
+            <div class="footer_sns">
+              <span>
+                <a href="https://www.instagram.com/visitjeju.kr/"><i class="fa-brands fa-instagram"></i></a>
+              </span>
+              <span>
+                <a href="youtube.com/@VISITJEJU"><i class="fa-brands fa-youtube"></i></a>
+              </span>
+              <span>
+                <a href="https://www.facebook.com/visitjeju.kr/"><i class="fa-brands fa-facebook-f"></i></a>
+              </span>
+            </div>
+            <div class="tel">
+              <p>고객센터</p>
+              <p>064-740-6000</p>
+            </div>
+          </div>
+          <div class="footer_bot_left">
+            <div class="footer_logo">
+              <div>
+                <img src="./img/logo.png" alt="">
+              </div>
+              <div>
+                <img src="./img/footer_logo_img10.png" alt="">
+              </div>
+            </div>
+            <div class="footer_detail">
+              <div class="detail01">
+                <p>(63122) 제주특별자치도 제주시 선덕로 23(연동) 제주웰컴센터</p>
+              </div>
+              <div class="detail02">
+                <p>관광문의 : 제주관광공사</p>
+                <p>Tel : 064-740-6000~1 </p>
+                <p>|</p>
+                <p>FAX : 64-740-6090</p>
+              </div>
+              <div class="detail03">
+                <p>사업자등록번호 : 616-82-21432</p>
+              </div>
+              <div class="detail04">
+                <p>관광불편신고 : 제주관광불편신고센터(1533-0082)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <asied class="aside">
+      <a href="#btn_top">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+    </asied>
+  </body>
+
+
+</html>

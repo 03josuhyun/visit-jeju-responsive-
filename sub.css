@@ -1,0 +1,548 @@
+ /*--------------default_setting----------------*/
+ * {
+   margin: 0;
+   padding: 0;
+ }
+
+ li {
+   list-style: none;
+ }
+
+ a {
+   color: black;
+   text-decoration: none;
+ }
+
+ img {
+   width: 100%;
+   height: auto;
+   display: block;
+ }
+
+ /*------------------------------------------*/
+ :root {
+   --point-color: #468432;
+   --sub-color: #9AD872;
+   --sub-color1: #F1FFED;
+   --mid-gray: #ccc;
+   --light-grey: #eee;
+   --outside-line: #999999;
+   --white: #fff;
+   --font-size: 14px;
+   scrollbar-color: var(--point-color) var(--white);
+ }
+
+ /*------------------------------------------*/
+ body,
+ html {
+   overflow-x: hidden;
+ }
+/*--------------------------------------*/
+.wrap {
+  width: calc(100% - 10px);
+  margin: 0 auto;
+}
+
+.top {
+  display: flex;
+  margin-top: 10px;
+}
+
+.top .top_left i {
+  font-size: 0.8rem;
+  color: var(--outside-line);
+}
+
+.top .breadscrum {
+  border: none;
+  color: var(--outside-line);
+}
+
+.top_mid {
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.top_right {
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+
+.title {
+  margin: 20px;
+  font-size: 1.2rem;
+}
+
+.calendar_title {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.calendar_box {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.line {
+  border: 1px solid var(--light-grey);
+  margin-bottom: 10px;
+}
+
+#cale01,
+#cale02,
+#cale03,
+#cale04,
+#cale05 {
+  display: none;
+}
+
+#cale01:checked~.calendar_box .calendar_mid label:nth-child(1),
+#cale02:checked~.calendar_box .calendar_mid label:nth-child(2),
+#cale03:checked~.calendar_box .calendar_mid label:nth-child(3),
+#cale04:checked~.calendar_box .calendar_mid label:nth-child(4),
+#cale05:checked~.calendar_box .calendar_mid label:nth-child(5) {
+  background-color: var(--point-color);
+  color: var(--white);
+}
+
+.calendar_mid label {
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin: 0 5px;
+  background-color: var(--white);
+}
+
+#option_btn {
+  display: none;
+}
+
+#option_btn:checked~.option_sheet {
+  display: block;
+}
+
+#option_btn~.option_sheet {
+  display: none;
+}
+
+.option_sheet {
+  width: 100%;
+  height: 270px;
+  background-color: var(--white);
+}
+
+.option {
+  display: flex;
+  justify-content: right;
+}
+
+.option label {
+  display: flex;
+}
+
+.option label i {
+  margin: 5px;
+}
+
+.option_box {
+  width: 100%;
+  height: 200px;
+  border: 1px solid var(--mid-gray);
+  background-color: var(--white);
+  position: relative;
+}
+
+.option_box .option_close {
+  color: var(--outside-line);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+#term01,
+#term02,
+#term03,
+#tema01,
+#tema02,
+#tema03,
+#tema04,
+#tema05,
+#tema06,
+#cash01,
+#cash02,
+#cash03,
+#cash04,
+#cash05 {
+  display: none;
+}
+
+#term01:checked~.option_top label:nth-child(2),
+#term02:checked~.option_top label:nth-child(3),
+#term03:checked~.option_top label:nth-child(4) {
+  background-color: var(--point-color);
+  color: var(--white);
+  border: none;
+}
+
+.option_top {
+  display: flex;
+  margin: 10px;
+}
+
+.option_top p {
+  margin: 0 10px;
+  font-size: 1.1rem;
+}
+
+.option_top label {
+  margin-right: 5px;
+  padding: 2px 5px;
+  border-radius: 20px;
+  background-color: var(--white);
+  border: 1px solid var(--mid-gray);
+}
+
+#tema01:checked~.option_mid label:nth-child(2),
+#tema02:checked~.option_mid label:nth-child(3),
+#tema03:checked~.option_mid label:nth-child(4),
+#tema04:checked~.option_mid label:nth-child(5),
+#tema05:checked~.option_mid label:nth-child(6),
+#tema06:checked~.option_mid label:nth-child(7) {
+  background-color: var(--point-color);
+  color: var(--white);
+  border: none;
+}
+
+.option_mid {
+  display: flex;
+  margin: 10px;
+}
+
+.option_mid p {
+  margin: 0 10px;
+  font-size: 1.1rem;
+}
+
+.option_mid label {
+  margin-right: 5px;
+  padding: 2px 5px;
+  border-radius: 20px;
+  background-color: var(--white);
+  border: 1px solid var(--mid-gray);
+}
+
+#cash01:checked~.option_bot .bot label:nth-child(1),
+#cash02:checked~.option_bot .bot label:nth-child(2),
+#cash03:checked~.option_bot .bot label:nth-child(3),
+#cash04:checked~.option_bot .bot .bot_bot label:nth-child(1),
+#cash05:checked~.option_bot .bot .bot_bot label:nth-child(2) {
+  background-color: var(--point-color);
+  color: var(--white);
+  border: none;
+}
+
+.option_bot {
+  margin: 10px;
+}
+
+.option_bot p {
+  margin: 10px 10px;
+  font-size: 1.1rem;
+}
+
+.option_bot .bot {
+  margin: 10px;
+}
+
+.option_bot .bot label {
+  padding: 2px 5px;
+  border-radius: 20px;
+  background-color: var(--white);
+  border: 1px solid var(--mid-gray);
+}
+
+.option_bot_bot {
+  margin-top: 10px;
+}
+
+.btn_box {
+  width: 250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.reset_btn {
+  width: 120px;
+  height: 30px;
+  background-color: var(--white);
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 4px 39px;
+  border: none;
+  background-color: var(--white);
+  border: 1px solid var(--point-color);
+}
+
+.set_btn {
+  width: 120px;
+  height: 30px;
+  background-color: var(--white);
+  border-radius: 5px;
+  padding: 4px 39px;
+  border: none;
+  background-color: var(--white);
+  border: 1px solid var(--point-color);
+}
+
+#cale01:checked~.calendar_sheet>.sheet01,
+#cale02:checked~.calendar_sheet>.sheet02,
+#cale03:checked~.calendar_sheet>.sheet03,
+#cale04:checked~.calendar_sheet>.sheet04,
+#cale05:checked~.calendar_sheet>.sheet05 {
+  display: block;
+}
+
+.calendar_sheet>div {
+  display: none;
+}
+
+.festivalA {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.festivalA .festival01 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.festivalA .festival02 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.festival {
+  width: calc(50% - 5px);
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.festival .festival_img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.festival .festival_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.festival .festival_title {
+  width: calc(100% - 8px);
+  height: 30px;
+  margin: 0 auto;
+  line-height: 30px;
+  font-size: 0.9rem;
+  font-weight: bolder;
+}
+
+.festival .festival_term {
+  font-size: 0.7rem;
+  margin: 0 10px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.festival .festival_bot {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.festival .festival_bot .booking {
+  width: 130px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid var(--point-color);
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.festival .festival_bot .heart {
+  width: 35px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid var(--point-color);
+  border-radius: 10px;
+  background-color: var(--white);
+  color: var(--mid-gray);
+}
+.festival_detail {
+  width: calc(100% - 16px);
+  height: 70px;
+  margin: 0 auto;
+  background-color: var(--white);
+  font-size: 0.7rem;
+}
+
+.festival_detail .fest01,
+.festival_detail .fest02 {
+  display: flex;
+}
+
+.festival_detail .fest01 p:first-child,
+.festival_detail .fest02 p:first-child,
+.festival_term p:first-child {
+  margin-right: 10px;
+  font-weight: bold;
+}
+/*
+#btn_fest {
+  display: none;
+}
+
+#btn_fest~.fest_bot {
+  display: none;
+}
+
+#btn_fest:checked~.fest_bot {
+  display: block;
+}
+
+#btn_fest~.fest_btn .fest_open {
+  display: block;
+}
+
+#btn_fest~.fest_btn .fest_close {
+  display: none;
+}
+
+#btn_fest:checked~.fest_btn .fest_open {
+  display: none;
+}
+
+#btn_fest:checked~.fest_btn .fest_close {
+  display: block;
+}*/
+
+.fest_btn label {
+  margin: 20px auto;
+  display: block;
+  width: 150px;
+  height: 40px;
+  background-color: var(--white);
+  color: var(--point-color);
+  border-radius: 20px;
+  border: 1px solid var(--point-color);
+  text-align: center;
+  line-height: 40px;
+}
+
+/*---------------aside-----------------------*/
+.aside {
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  background-color: var(--white);
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid var(--sub-color);
+}
+
+.aside a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.2rem;
+  color: var(--sub-color);
+}
+
+/*--------------tablet---------------------------*/
+@media all and (min-width:601px) {
+  .calendar_box {
+  width: calc(100% - 100px);
+  margin-top: 30px;
+  margin-bottom: 20px;
+  }
+  .festivalA {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .festival01 {
+    width: calc(50% -10px);
+    margin-right: 10px;
+  }
+  .festival .festival_bot .booking {
+    width: 70%;
+  }
+
+  .festival .festival_bot .heart {
+    width: calc(30% - 10px);
+  }
+}
+
+/*------------------pc---------------------------*/
+@media all and (min-width:769px) {
+ 
+  .festival .festival_bot .booking {
+    width: 70%;
+  }
+  .festival .festival_bot .heart {
+    width: calc(30% - 10px);
+  }
+  /*.booking:hover  {
+    color: var(--point-color);  
+  }
+  .heart:hover i {
+    color: var(--point-color);
+  }*/
+}
+
+/*-----------------고pc--------------------------*/
+@media all and (min-width:1025px) {
+  .wrap {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+  .festival .festival_bot {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .festival .festival_bot .booking {
+    width: 70%;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid var(--point-color);
+    background-color: var(--white);
+    border-radius: 10px;
+  }
+
+  .festival .festival_bot .heart {
+    width: calc(30% -10px);
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid var(--point-color);
+    border-radius: 10px;
+    background-color: var(--white);
+  }
+}

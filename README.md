@@ -8,4 +8,4 @@
 
 
 ### 사용한 기술 (Tech Stack)
-* FrontEnd : HTML, CSS, 
+* FrontEnd : HTML, CSS, JavaScript

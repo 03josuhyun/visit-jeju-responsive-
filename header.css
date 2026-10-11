@@ -194,7 +194,6 @@ img {
   width: 100%;
 }
 
-.weather_bot .bot_top {}
 
 .weather_bot .bot_top p {
   font-size: 0.8rem;
@@ -977,7 +976,7 @@ img {
   }
 
   .weather_box_down {
-    width: calc(50% - 500px);
+    width: calc(50% - 350px);
     position: absolute;
     top: 70px;
     right: calc(50% - 500px);

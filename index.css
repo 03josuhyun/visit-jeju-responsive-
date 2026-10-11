@@ -1578,11 +1578,6 @@
      display: none;
    }
 
-   /*
-   .active:hover .active_text {
-     display: block;
-   }*/
-
    .active_text .active_top {
      margin-top: 20px;
      font-size: 1.1rem;
@@ -1782,10 +1777,6 @@
 
    .content05 {
      margin: 60px auto;
-   }
-
-   .content05 .news_box {
-     /* margin: 0 auto; */
    }
 
    .content05 .news_title {

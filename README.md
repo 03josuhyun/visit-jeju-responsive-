@@ -21,12 +21,6 @@
 **CSS3** : 모듈화된 스타일시트 운영 ('header','footer','index','sub' 분리) 및 반응형 레이아웃 구형
 **JavaScript(ES56+)** : DOM 조작 및 동적 UI 컴포넌트(슬라이드, 탭 메뉴 등) 기능 구현
 
-<p>
-  <img src="https://shields.io" alt="HTML5">
-  <img src="https://shields.io" alt="CSS3">
-  <img src="https://shields.io" alt="JavaScript">
-</p>
-
 ### ⚙ 디렉토리 구조 (Directory Structure)
 ```
 ├ img : #웹 사이트에 사용된 이미지 자산 폴더
@@ -50,6 +44,11 @@
 * **Vanilla JS 컴포넌트화 및 상태 관리 고민**
   * 문제 : 프레임워크 없이 개발하다 보니 각 페이지(index, sub)에서 공통 UI(헤더, 푸터)를 중복 호출하고 상태를 동기화하는 데 어려움이 있습니다.
   * 해결*** : 중복되는 HTML 요소를 자바 스크립트 함수형 컴포넌트로 분리하고, DOM이 로드될 때 동적으로 주입하는 방식으로 재사용성을 높였습니다.
+
+### 코드 리뷰 & 리팩토링 (Code Review)
+* **이벤트 위임을 통한 DOM 조작 최적화**
+ * 각 카드 요소에 리스너를 개별 등록하던 방식에서 부모 컨테이너에만 이벤트를 위임하는 방식으로 개선하여 성능을 높였습니다.
+ * 
 
 ### 실행 방법 (Getting Started)
 1. 이 저장소를 클론(Clone)하거나 ZIP 파일로 다운로드 합니다.

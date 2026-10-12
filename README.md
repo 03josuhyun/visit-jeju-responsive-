@@ -21,6 +21,12 @@
 **CSS3** : 모듈화된 스타일시트 운영 ('header','footer','index','sub' 분리) 및 반응형 레이아웃 구형
 **JavaScript(ES56+)** : DOM 조작 및 동적 UI 컴포넌트(슬라이드, 탭 메뉴 등) 기능 구현
 
+<p>
+  <img src="https://shields.io" alt="HTML5">
+  <img src="https://shields.io" alt="CSS3">
+  <img src="https://shields.io" alt="JavaScript">
+</p>
+
 ### ⚙ 디렉토리 구조 (Directory Structure)
 ```
 ├ img : #웹 사이트에 사용된 이미지 자산 폴더
@@ -32,7 +38,7 @@
 ├ sub.js : 서브 페이지 동적 스크립트
 ├ header.css : 공통 상단 헤더 스타일
 ├ footer.css : 공통 하단 푸터 스타일
-└ index.html : 프로젝트 설명 문서
+└ README.html : 프로젝트 설명 문서
 ```
 
 ### 프로젝트 아키텍처 (Project Architecture)

@@ -65,7 +65,6 @@ $('.heart').on('click', function () {
   }
 });
 </code></pre>
-
 <blockquote>
   <strong>⚠️ 셀프 체크 및 논의하고 싶은 점 (Issue & Question)</strong><br>
   <ul>
@@ -77,9 +76,78 @@ $('.heart').on('click', function () {
 
 </details>
 
-* ** 데이터와 UI 렌더링 로직 분리를 통한 유지보수성 향상**
-  * **기존 문제점** : 카드 슬라이더 내부의 콘텐츠 (이미지 경로, 제목, 설명 등)를 HTML에 하드코딩하거나 하나의 함수 내부에서 한꺼번에 처리하여, 내용 변경 시 코드를 직접 수정해야하는 위험이 있습니다.
-  * **개선 사항** : 슬라이더 데이터(배열)와 데이터를 받아 HTML 구조로 변환하는 렌더링 함수(`renderSlider`)를 완전히 분리하여 확장성과 가독성을 높였습니다.
+<h4></h4>
+<details>
+<summary>🔍 코드 보기(클릭하여 펼치기)</summary>
+
+<h4>❌ 현재 작성된 메뉴 레이블 코드 (index.html)</h4>
+<pre><code class="language-html">
+&lt;label for="gnb01" class="gnb01"&gt;
+  제주 동부 &lt;i class="fa-solid fa-angle-down"&gt;&lt;/i&gt;
+&lt;/label&gt;
+</code></pre>
+
+<blockquote>
+  <strong>⚠️ 셀프 체크 및 논의하고 싶은 점 (Issue & Question)</strong><br>
+  <ul>
+    <li><strong>연결 대상(gnb01) 누락 문제:</strong> <code>for="gnb01"</code>로 연결될 <code>id="gnb01"</code>을 가진 checkbox 입력(input) 요소가 상단 선언부에 누락되어 있는 것을 발견했습니다. (현재 gnb02부터 gnb05까지만 존재)</li>
+    <li><strong>구조 개선 고민:</strong> 이 레이블을 체크박스 제어용으로 사용하려던 것이라면 누락된 input 요소를 추가해야 합니다. 하지만 현재 하위 메뉴가 jQuery 클릭 이벤트로도 열리도록 작성되어 있어 기능이 중복되는 상태입니다.</li>
+    <li><strong>리뷰 요청 사항:</strong> 마크다운 레이블 구조를 그대로 유지하면서 input을 추가하는 게 좋을지, 아니면 jQuery 제어에 맞춰 불필요한 레이블 구조를 과감히 <code>&lt;button&gt;</code> 태그로 변경하는 것이 마크업 표준에 더 맞을지 의견을 구하고 싶습니다.</li>
+  </ul>
+</blockquote>
+
+</details>
+
+<h4></h4>
+<details>
+<summary>🔍 코드 보기(클릭하여 펼치기)</summary>
+
+<h4>❌ 현재 작성된 유튜브 링크 코드 (index.html)</h4>
+<pre><code class="language-html">
+&lt;a href="https://www.https://://youtube.com"&gt;
+  &lt;img src="./img/news09.jpg" alt=""&gt;
+&lt;/a&gt;
+</code></pre>
+
+<blockquote>
+  <strong>⚠️ 셀프 체크 및 리팩토링 포인트 (Issue & Bug Fix)</strong><br>
+  <ul>
+    <li><strong>프로토콜 중복 오류:</strong> <code>href</code> 주소 내부에 <code>https://www</code> 프로토콜이 중복으로 들어가 있는 것을 발견했습니다. 이로 인해 링크를 클릭했을 때 올바른 페이지로 이동하지 않고 404 에러가 발생하게 됩니다.</li>
+    <li><strong>수정 계획:</strong> 중복된 프로토콜 주소를 제거하고 실제 유튜브 영상 주소(<code>https://://youtube.com</code>)로 정상 연결되도록 수정할 예정입니다.</li>
+  </ul>
+</blockquote>
+
+</details>
+
+<h4></h4>
+
+<details>
+<summary>🔍 코드 보기(클릭하여 펼치기)</summary>
+
+<h4>⚠️ 검토 및 개선이 필요한 이벤트 코드 (index.js)</h4>
+<pre><code class="language-javascript">
+$('.active').on({
+  mouseenter: function () {
+    $(this).find('.active_text').stop(true, true).fadeIn(200);
+  },
+  mouseleave: function () {
+    $(this).find('.active_text').stop(true, true).fadeOut(200);
+  }
+});
+</code></pre>
+
+<blockquote>
+  <strong>💬 셀프 체크 및 리팩토링 제안 (유지보수성 개선 의견)</strong><br>
+  <ul>
+    <li><strong>클래스 이름(Active) 역할 중복:</strong> 현재 <code>.active</code>라는 클래스명이 '축제 아코디언의 활성화 상태'와 '액티비티 카드 자체의 이름'으로 혼용되어 모두 사용되고 있습니다.</li>
+    <li><strong>잠재적 버그 위험:</strong> 이로 인해 위 스크립트 이벤트가 문서 내의 의도하지 않은 다른 <code>.active</code> 요소에까지 전부 등록되어 오작동을 일으킬 우려가 있습니다.</li>
+    <li><strong>리뷰 요청 사항:</strong> 클래스명의 역할이 겹쳐 유지보수가 어려워질 수 있으므로, 액티비티 카드 컴포넌트에는 <code>.activity-card</code> 같은 별도의 고유 클래스명을 부여해 이벤트 대상을 명확하게 구분하는 구조로 개선하면 어떨지 의견을 구합니다.</li>
+  </ul>
+</blockquote>
+
+</details>
+
+<h4></h4>
 
 ### 실행 방법 (Getting Started)
 1. 이 저장소를 클론(Clone)하거나 ZIP 파일로 다운로드 합니다.

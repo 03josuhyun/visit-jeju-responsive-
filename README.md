@@ -47,10 +47,8 @@
 
 ### 코드 리뷰 & 리팩토링 (Code Review)
 
-<h4>❌ 현재 작성된 하트 버튼 상태 관리 코드</h4>
-
 <details>
-<summary> 🔍 코드 비교 보기(클릭하여 펼치기) </summary>
+<summary> 🔍 현재 작성된 하트 버튼 상태 관리 코드 </summary>
 
 <pre><code class="language-javascript">
 let index = false;
@@ -76,11 +74,9 @@ $('.heart').on('click', function () {
 
 </details>
 
-<h4></h4>
 <details>
-<summary>🔍 코드 보기(클릭하여 펼치기)</summary>
+<summary>🔍 현재 작성된 메뉴 레이블 코드(index.html)</summary>
 
-<h4>❌ 현재 작성된 메뉴 레이블 코드 (index.html)</h4>
 <pre><code class="language-html">
 &lt;label for="gnb01" class="gnb01"&gt;
   제주 동부 &lt;i class="fa-solid fa-angle-down"&gt;&lt;/i&gt;
@@ -100,9 +96,8 @@ $('.heart').on('click', function () {
 
 <h4></h4>
 <details>
-<summary>🔍 코드 보기(클릭하여 펼치기)</summary>
+<summary>🔍 현재 작성된 유튜브 링크 코드(index.html)</summary>
 
-<h4>❌ 현재 작성된 유튜브 링크 코드 (index.html)</h4>
 <pre><code class="language-html">
 &lt;a href="https://www.https://://youtube.com"&gt;
   &lt;img src="./img/news09.jpg" alt=""&gt;

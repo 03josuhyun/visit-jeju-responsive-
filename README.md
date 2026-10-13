@@ -51,7 +51,8 @@
   * **개선 사항** : 탭 버튼들의 공통 부모의 요소에만 단 하나의 이벤트 리스너를 등록하고 `e.target`과 `dataset`을 활용해 어떤 탭이 클릭되었는지 감지하도록 개선하여 성능을 최적화했습니다.
 <details>
 <summary> 🔍 코드 비교 보기(클릭하여 펼치기) </summary>
- 
+
+ <h4>❌ 기존 코드 문제점 : 전역변수 사용 및 개별 상태 관리 불가</h4>
  ```javascript
  let index = false;
   $('.heart').on('click', function () {

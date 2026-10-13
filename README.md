@@ -65,6 +65,16 @@ $('.heart').on('click', function () {
   }
 });
 </code></pre>
+
+<blockquote>
+  <strong>⚠️ 셀프 체크 및 논의하고 싶은 점 (Issue & Question)</strong><br>
+  <ul>
+    <li><strong>개별 상태 관리 오류:</strong> 현재 모든 하트 버튼이 하나의 <code>index</code> 변수를 공유하고 있어서, 카드 하나를 누르면 다른 카드들의 하트 상태까지 동시에 변하는 문제가 있습니다. 각 하트 버튼이 독립적으로 토글되게 하려면 데이터셋(dataset)을 쓰는 게 좋을지, 혹은 다른 좋은 컴포넌트 분리 방식이 있을지 의견을 구하고 싶습니다.</li>
+    <li><strong>이벤트 위임 적용 여부:</strong> 카드 슬라이더 내부 요소가 늘어날 때 성능 최적화를 위해 탭 메뉴처럼 부모 요소에 이벤트 위임을 적용해야 할지 고민입니다.</li>
+    <li><strong>문법 오타 확인:</strong> <code>"var(--white"</code> 부분에 닫는 괄호 <code>)</code>가 누락된 것을 확인하여 이 부분은 반영할 예정입니다.</li>
+  </ul>
+</blockquote>
+
 </details>
 
 * ** 데이터와 UI 렌더링 로직 분리를 통한 유지보수성 향상**

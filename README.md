@@ -52,7 +52,16 @@
 <details>
 <summary> 🔍 코드 비교 보기(클릭하여 펼치기) </summary>
     ```
- 
+ let index = false;
+  $('.heart').on('click', function () {
+    if (index === false) {
+      $(this).find('i').css({ color: 'var(--point-color)' });
+      index = true;
+    } else {
+      $(this).find('i').css({ color: "var(--white" });
+      index = false;
+    }
+  });
     ```
 </details>
 

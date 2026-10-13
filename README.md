@@ -46,25 +46,25 @@
   * 해결*** : 중복되는 HTML 요소를 자바 스크립트 함수형 컴포넌트로 분리하고, DOM이 로드될 때 동적으로 주입하는 방식으로 재사용성을 높였습니다.
 
 ### 코드 리뷰 & 리팩토링 (Code Review)
-* **이벤트 위임을 통한 탭 메뉴 최적화**
-  * **기존 문제점** : 아티스트 탭 버튼마다 각각 이벤트 리스너를 개별적으로 등록하여, 탭이 늘어날 수록 메모리 사용량이 증가하는 비효율성이 있습니다.
-  * **개선 사항** : 탭 버튼들의 공통 부모의 요소에만 단 하나의 이벤트 리스너를 등록하고 `e.target`과 `dataset`을 활용해 어떤 탭이 클릭되었는지 감지하도록 개선하여 성능을 최적화했습니다.
+
+<h4>❌ 현재 작성된 하트 버튼 상태 관리 코드</h4>
+
 <details>
 <summary> 🔍 코드 비교 보기(클릭하여 펼치기) </summary>
 
- <h4>❌ 기존 코드 문제점 : 전역변수 사용 및 개별 상태 관리 불가</h4>
- ```javascript
- let index = false;
-  $('.heart').on('click', function () {
-    if (index === false) {
-      $(this).find('i').css({ color: 'var(--point-color)' });
-      index = true;
-    } else {
-      $(this).find('i').css({ color: "var(--white" });
-      index = false;
-    }
-  });
- ```
+<pre><code class="language-javascript">
+let index = false;
+
+$('.heart').on('click', function () {
+  if (index === false) {
+    $(this).find('i').css({ color: 'var(--point-color)' });
+    index = true;
+  } else {
+    $(this).find('i').css({ color: "var(--white)" }); 
+    index = false;
+  }
+});
+</code></pre>
 </details>
 
 * ** 데이터와 UI 렌더링 로직 분리를 통한 유지보수성 향상**

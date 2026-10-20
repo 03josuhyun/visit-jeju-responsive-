@@ -1,6 +1,8 @@
 # 비짓제주 리뉴얼 사이트
 
 ## 프로젝트 소개
+<img width="1920" height="917" alt="image 156" src="https://github.com/user-attachments/assets/c7454c56-e99c-4941-ab86-33ba6cddbab3" />
+
 ### 제작기간 
 팀플 기획 기간 : 2026.06.30 ~ 2026.07.10 (10일)
 코딩 기간 : 2026.07.10 ~ 2026.07.24 (14일)

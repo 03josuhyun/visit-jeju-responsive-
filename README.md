@@ -46,7 +46,7 @@
 
 **1. 하트 버튼 클릭 시 찜 상태에 따라 아이콘 색상이 변경되도록 구현했습니다**
 <p align="left">
- <img width="391" height="520" alt="ezgif com-gif-maker" src="https://github.com/user-attachments/assets/df4dedf7-31a1-48ee-aae2-d32bb8f5cd8a" />
+<img width="1080" height="497" alt="ezgif com-gif-maker (1)" src="https://github.com/user-attachments/assets/e1f0592a-1f1a-4ae2-bd98-cd3e85e99728" />
 </p>
 
 ```javascript

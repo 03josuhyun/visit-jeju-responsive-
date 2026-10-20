@@ -46,7 +46,7 @@
 
 **1. 하트 버튼 클릭 시 찜 상태에 따라 아이콘 색상이 변경되도록 구현했습니다**
 <p align="left">
- <img width="391" height="520"  alt="ezgif com-gif-maker" src="https://github.com/user-attachments/assets/a43243d9-6d43-46bb-b729-dc343ac7dcc7" />
+ <img width="391" height="520" alt="ezgif com-gif-maker" src="https://github.com/user-attachments/assets/df4dedf7-31a1-48ee-aae2-d32bb8f5cd8a" />
 </p>
 
 ```javascript
@@ -69,6 +69,10 @@ $('.heart').on('click', function () {
 
 
 **2. 메뉴 레이블을 클릭해 특정 메뉴를 제어할 수 있도록 HTML, JavaScript로 작성했습니다**
+<p align="left">
+ <img width="391" height="520"  alt="ezgif com-gif-maker" src="https://github.com/user-attachments/assets/a43243d9-6d43-46bb-b729-dc343ac7dcc7" />
+</p>
+
 ```javascript
 <label for="gnb01" class="gnb01">
   제주 동부 <i class="fa-solid fa-angle-down"></i>

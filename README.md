@@ -45,6 +45,8 @@
 ## 코드 리뷰 (Code Review)
 
 **1. 하트 버튼 클릭 시 찜 상태에 따라 아이콘 색상이 변경되도록 구현했습니다**
+<img width="391" height="520" alt="ezgif com-gif-maker" src="https://github.com/user-attachments/assets/a43243d9-6d43-46bb-b729-dc343ac7dcc7" />
+
 ```javascript
 let index = false;
 

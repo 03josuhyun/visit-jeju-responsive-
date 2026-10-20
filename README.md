@@ -77,6 +77,24 @@ $('.heart').on('click', function () {
 <label for="gnb01" class="gnb01">
   제주 동부 <i class="fa-solid fa-angle-down"></i>
 </label>
+
+$(function () {
+  $('.gnb01').on('click', function () {
+    $('.lnb01').toggle('slow');
+  });
+  $('.gnb02').on('click', function () {
+    $('.lnb02').toggle('slow');
+  });
+  $('.gnb03').on('click', function () {
+    $('.lnb03').toggle('slow');
+  });
+  $('.gnb04').on('click', function () {
+    $('.lnb04').toggle('slow');
+  });
+  $('.gnb05').on('click', function () {
+    $('.lnb05').toggle('slow');
+  });//gnb_lnb
+)
 ```
 * **label** : 특정 입력 요소와 연결하기 위한 레이블
 * **class"gnb01"** : css 스타일링이나 javascript 선택에 활용
